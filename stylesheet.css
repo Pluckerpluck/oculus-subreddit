@@ -1,0 +1,4294 @@
+/* Minimaluminiumalism Base Theme, 1.37, Header Style B */
+
+a[href="#s"] {
+	padding:0 2px;
+	color: #fff;
+	background: #000;
+	cursor: text;
+	border-radius: 3px;
+}
+a[href="#s"]:hover,
+a[href="#s"]:active {
+	color: #ff0;
+}
+a[href="#s"]:after {
+	content: attr(title);
+	padding: 0 8px;
+}
+a[href="#s"]:hover:after,
+a[href="#s"]:active:after {
+	color: #fff;
+}
+a[href="#s"]:after {
+	background: #000;
+	color: #000;
+}
+
+
+/*SUBREDDIT LOGO*/
+span.pagename.redditname a {
+	background-image: url(%%sublogo%%);
+	background-position: center;
+	background-size: contain;
+	position: absolute;
+	left: 70px;
+	z-index: 3;
+	font-family: <Comic Sans MS>;
+
+ }
+
+/*DOWNVOTE HACK*/
+body:not(.subscriber) .down { visibility: hidden; }
+
+/*HEADER STYLE B EXCLUSIVE CODE*/
+
+#header::after {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	
+	background: rgba(0, 0, 0, 0.5);
+	content: " ";
+	z-index: -1;
+}
+
+#header-bottom-left .tabmenu {
+	background-color: #1C1E20;
+	text-align: left;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	padding-left: 180px;
+ }
+
+.tabmenu {margin-top: 22px;}
+
+	.tabmenu li {
+		background-color: transparent;
+		margin: 0 !important;
+		height: 36px;
+	 }
+
+.selected, .choice.primary {font-weight: 600;}
+
+a {
+	text-decoration: none;
+	color: #999;
+ }
+
+
+.tabmenu li a {
+	padding: 0px 5px!important;
+	background-color: transparent;
+	border-left: none;
+	border-right: none;
+	display: inline-block;
+	line-height: 70px;
+	text-align: center;
+	text-transform: Uppercase;
+	transition: 150ms;
+	-webkit-transition:150ms;
+	font-weight: normal;
+	color: #e5e5e5 !important;
+	text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+ }
+ 
+ @media screen and (min-width: 1400px) {
+	 .tabmenu li a {
+		   padding: 0px 20px !important;
+	 }
+ }
+
+.tabmenu li:hover a {
+	background-color: rgba(255, 255, 255, 0.08);
+	color: #FFF !important;
+	font-weight: bold !important;
+ }
+
+.tabmenu li.selected a {
+	color: #FFF !important;
+	background-color: rgba(255, 255, 255, 0.15);
+	font-weight: bold !important;
+	border: none !important;
+ }
+
+/*--- Tabs - Hide unimportant ones  ---*/
+#header .tabmenu li:nth-of-type(8) {
+	display: none;
+	visibility: hidden;
+ }
+
+.listing-page .tabmenu li a[href*="/gilded"] {display: none;}
+
+/*--- End Tabs - Hide unimportant ones  ---*/
+
+#header-img {
+	position: relative;
+	height: 60px!important;
+	width: 60px;
+	margin-left: 10px;
+	background-size: contain!important;
+	background-repeat: no-repeat!important;
+	z-index: 1;
+}
+
+/*END HEADER STYLE B EXCLUSIVE CODE*/
+
+p.tagline {
+	line-height:24px;
+	padding-top:-2px !important;
+}
+
+ul.flatlist.buttons {
+	clear:both;
+}
+
+.thumbnail {
+	width:75px !important;
+}
+
+.thumbnail img {
+	width:75px !important;
+}
+
+.commentarea span.score {font-weight: bold;}
+
+.deepthread::after {background-image: none; content: ">"; font-weight:bold; font-size: 12px; }
+
+.deepthread {font-weight: bold; text-transform: uppercase; font-size: 9.2px;}
+
+.markdownEditor .edit-btn:not(.btn-macro) {background-color: transparent !important; border: 1px solid #c6c6c6; border-radius: 3px;}
+
+#hsts_pixel {display: none;}
+
+.side #search_showmore {color: #bbb;}
+karmaZ_
+.search-expando-button-label-collapsed,
+.search-expando-button-label-expanded {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 10px;
+}
+
+.sr-bar .separator {
+	color: transparent;
+	font-size: 8px;
+}
+
+.BEFoot button {margin-right: 5px;}
+
+a#sr-more-link[href="https://www.reddit.com/subreddits/"] {
+	background: rgba(0, 0, 0, 0.6) none repeat scroll 0% 0% !important;
+	color: rgb(255, 255, 255);
+	padding: 3px 15px;
+}
+
+a {color: #666;}
+
+.usertext .help-toggle, .usertext a.reddiquette {text-transform: uppercase;}
+
+.usertext .help-toggle:hover, .usertext a.reddiquette:hover {font-weight: bold}
+
+.thing .title:visited {color: #331f6d;}
+
+.flairselector li:hover {
+	width: 400px !important;
+	background-color: rgb(221, 221, 221);
+	border-radius: 20px;
+}
+
+.flair {cursor: default;}
+
+.loadFlat {
+	position: relative !important;
+	z-index: 1;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 10px;
+	margin-left: 10px;
+	transition: 200ms;
+}
+
+.link.last-clicked {border: none;}
+
+div#RESStyleSheetTipPane {border: none !important;}
+div#RESStyleSheetTipPane-header {border: none !important;}
+
+.toc ul {background: #fff}
+
+.commentNavSortType:hover, .commentarea .menuarea .toggle a:hover{text-decoration: none !important;}
+
+.roundfield textarea, .roundfield input[type="url"], .roundfield input[type="text"] {transition: 300ms; border: none; border-bottom: 1px solid #ccc; font-size: 20px; height: 25px;}
+
+	.commentarea textarea:not(:focus):not(:hover) {
+			background-color: #F8F8F8 !important;
+	}
+
+	.commentarea textarea:hover, .roundfield textarea:hover, .roundfield input[type="url"]:hover, .roundfield input[type="text"]:hover {border-bottom: 1px solid #999;}
+
+
+	.roundfield input[type=url]:focus,.roundfield input[type=text]:focus,.roundfield textarea:focus,#img-name:focus {border-bottom: 2px solid;}
+
+	.usertext-edit textarea:hover{border: 1px solid #999;}
+
+	.usertext-edit textarea:focus {border-top: 1px solid #e1e1e1 !important; border-left: 1px solid #e1e1e1 !important; border-right: 1px solid #e1e1e1 !important; border-bottom: 3px solid;}
+
+	.usertext-edit textarea {transition: 200ms; height: 100px; font-size: 1em; border: 1px solid #ccc;}
+
+
+
+#RESPrefsDropdown {
+	background-color: rgba(0, 0, 0, 0.85) !important;
+	border: none;
+	border-radius: 6px;
+ }
+
+.RESDropdownList li {
+	background-color: transparent;
+	color: #fff !important;
+	border: none !important;
+	transition: all 0.15s ease;
+	text-transform: uppercase;
+ }
+
+	.RESDropdownList li:hover,
+	.RESDropdownList li a:hover {
+		background-color: rgba(80, 80, 80, 0.6) !important;
+		color: #fff !important;
+	 }
+
+#NERFail {
+	padding-top: 20px;
+	border: none;
+ }
+
+/* Domain */
+.link .domain {visibility: hidden;}
+
+	.link .domain a {
+		visibility: visible;
+		color: #b3b3b3;
+		transition: all 0.15s ease;
+	 }
+
+.sr-bar a.gold {color: gold;}
+
+.icon-menu a {background: none;}
+
+textarea {border: 1px solid rgba(0, 0, 0, 0.12); /*MAKES IT LOOK BETTER ON FIREFOX*/}
+
+a.madeVisible {margin-top: 20px;}
+
+img.RESImage {border-radius: 12px;}
+
+.gold-accent.comment-visits-box {color: black; margin-bottom:5px;} /*MARGIN ADDED BY /u/miltonthecat*/
+
+.gold-accent {
+	background-color: transparent;
+	border: 0px;
+ }
+.nsfw-stamp {
+	color: white;
+	border: none !important;
+	background: #D10023;
+	padding: 0px 8px !important;
+	border-radius: 20px;
+	font-weight: bold;
+}
+
+.action-form {
+	border: medium none;
+	max-width: 300px;
+	padding: 20px;
+	margin: 5px 0px;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 25px;
+	background: rgba(0, 0, 0, 0.85);
+	color: white;
+	position: absolute;
+	z-index: 999;
+ }
+
+	.action-form button {margin-right: 10px;}
+
+	.action-form input:disabled {display: none;}
+
+	.action-form ol {margin-bottom: 15px;}
+
+.pretty-button {
+	background: none !important;
+	font-weight: bold;
+	padding: 1px 5px;
+	border-radius: 20px;
+	font-size: 10px !important;
+	border: medium none !important;
+	text-transform: uppercase;
+}
+
+.pretty-button.negative {color: #D10023;}
+.pretty-button.neutral {color: #444;}
+.pretty-button.positive {color: #2B8B27;}
+
+.pretty-button.pressed  {font-size: 0px !important;}
+.pretty-button.pressed:after {font-size: 10px; content: "Action Done"; text-transform: uppercase; font-weight: bold;}
+
+
+button[disabled] {display:none;}
+
+ul.report-reasons {background-color: transparent; text-transform: uppercase; border: none;}
+
+.content .entry .buttons li.reported-stamp,
+body .content .stickied .entry .buttons li.reported-stamp,
+body .content .over18 .entry .buttons li.reported-stamp {
+	border: none !important;
+	background: #666 !important;
+	color: white !important;
+	font-weight: bold;
+	text-transform: uppercase !important;
+	padding: 1px 8px;
+	border-radius: 20px;
+	font-size: 9px !important;
+}
+
+.commentarea .nestedlisting {margin: 0 -10px;}
+
+.res-commentBoxes .nestedlisting > .comment {margin: 0 0 8px!important;}
+
+.res-commentBoxes .nestedlisting .comment {overflow: visible!important;}
+
+.dropdown.srdrop .selected {color: white;}
+
+.flat-list li a.gold {color: gold;}
+
+/*MODERATOR END*/
+
+.tabpane-content {border: none;}
+
+.linefield {background: transparent;}
+
+.linefield .title {text-transform: uppercase; font-weight:bold; font-size: 13px;}
+
+.flairgrant.flairlist {padding:10px;}
+
+.flair-jump button {font-size: 12px;}
+
+.fancy-settings h1 {
+	margin: 10px 5px;
+	text-transform: uppercase;
+	padding: 20px 30px 5px;
+	font-size: 18px;
+}
+
+#img-name, .flairlist .flair-jump input[type="text"] {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	transition: 300ms;
+	display: block;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+#img-name:hover, .flairlist .flair-jump input[type="text"]:hover {border-color: #666;}
+
+.flairlisthome {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.stylesheet-customize-container h2 {font-weight:bold; text-transform: uppercase; font-size: 13px;}
+
+.pretty-form {padding: 20px 0}
+
+#img-preview-container {border: none; background: #444; border-radius: 20px; margin: 25px 10px -25px 0px; padding: 10px;}
+
+.linefield.mobile {
+	width: 512px;
+	background-color: transparent;
+	border: none;
+}
+
+.flairlist.usertable {margin-top: 35px;}
+
+.flairrow {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+/*Stylesheet page fix*/
+.sheets {
+	margin-right: 20px;
+	margin-bottom: 20px;
+ }
+
+#preview-table {padding-left: 20px;}
+
+div#images {
+	margin-left: 20px;
+	padding-right: 20px;
+ }
+
+ul#image-preview-list {
+	margin: -15px;
+	margin-bottom: -15px;
+	margin-top: 20px;
+	padding-top: 0px;
+ }
+
+	ul#image-preview-list li {
+		background: #fff;
+		padding: 8px 8px;
+		margin: 0 0 5px 5px;
+		border-radius: 10px;
+		border: 1px solid #e1e1e1;
+		width: 296.5px;
+		height: 100px;
+		font-size: 14px;
+		color: #666;
+	 }
+
+	ul#image-preview-list .preview {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 8px;
+		right: 0;
+		margin: auto 0;
+		line-height: 98px;
+	 }
+
+		ul#image-preview-list .preview img {vertical-align: middle;}
+
+/*SUBREDDIT FONT*/
+.login-form-side input[type="text"], .login-form-side input[type="password"],
+#search input[type="text"],
+.md textarea,
+textarea,
+body {font-family: -apple-system, San Francisco Display, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+
+/*RES TEMP BUGFIX*/
+.title + .expando-button + .expando-button {display: none;}
+
+/*DROP DOWN CHOICES*/
+.drop-choices.lightdrop {
+	background: rgba(0, 0, 0, 0.85);
+	border: medium none;
+	padding: 5px;
+	border-radius: 0px 0px 4px 4px;
+	font-weight: bold;
+	margin-top: 2px;
+	color: rgb(255, 255, 255) !important;
+ }
+
+.drop-choices a.choice {color: #FFF;}
+
+	.drop-choices a.choice:hover {background: rgba(80, 80, 80, 0.6);}
+
+/*ICONOGRAPHY*/
+
+#mail.nohavemail,#mail.havemail, #modmail.havemail,#modmail.nohavemail, .thumbnail.nsfw, .thumbnail.self, .thumbnail.default, .stickied .thumbnail.self, #header-bottom-right a.pref-lang, .res #header-bottom-right .gearIcon, .arrow.upmod, .arrow.downmod, .arrow.up, .arrow.down,.expando-button {background: url(%%sprites-alt2%%) !important; background-size: 50px 502px !important;}
+
+#mail.nohavemail {background-position: 0 0}
+#mail.havemail {background-position: 0 -58.66px !important;}
+#modmail.nohavemail {background-position: 0 -82px !important}
+#modmail.havemail {background-position: 0 -105.333px !important}
+#header-bottom-right a.pref-lang {background-position: 0 -128.666px !important}
+.res #header-bottom-right .gearIcon {background-position: 0 -152px !important}
+
+#mail.nohavemail,#mail.havemail,#modmail.nohavemail,#modmail.havemail,#header-bottom-right a.pref-lang,.res #header-bottom-right .gearIcon {width: 20px; height: 20px; vertical-align: middle !important;}
+
+.thumbnail.nsfw, .thumbnail.self, .thumbnail.default, .stickied .thumbnail.self {width: 75px; height: 50px; background-size: 75px 753px !important;}
+
+.stickied .thumbnail.self {background-position: 0 -265px !important;}
+.thumbnail.self {background-position: 0 -345px !important}
+.thumbnail.default {background-position: 0 -426px !important}
+.thumbnail.nsfw {background-position: 0 -506px !important}
+
+.arrow.up {background-position: 3px -685px !important; background-size: 37.5px 376.5px !important;}
+.arrow.upmod {background-position: 2.3px -666px !important; background-size: 37.5px 376.5px !important;}
+.arrow.down {background-position: 3px -699px !important; background-size: 37.5px 376.5px !important;}
+.arrow.downmod {background-position: 3px -716px !important; background-size: 37.5px 376.5px !important;}
+
+.expando-button,
+.expando-button:hover,
+.expando-button.expanded:hover,
+.expando-button.expanded {background-position: 0 -482px !important;}
+
+
+#modmail.havemail,
+#modmail.nohavemail {height: 18px; top: -5px; margin-bottom: 0px !important;}
+
+.res #modmail.havemail, .res #modmail.nohavemail {margin-bottom: -6px !important;}
+
+body.res #header-bottom-right #mail.havemail {top: -1px !important;}
+
+#mail.nohavemail,
+#mail.havemail,
+#modmail.havemail,
+#modmail.nohavemail,
+#header-bottom-right a.pref-lang.choice {
+	background-repeat: no-repeat !important;
+	width: 20px !important;
+	height: 20px !important;
+	top: 0px !important;
+}
+
+
+
+/*VOTE ARROWS*/
+.arrow.downmod,
+.arrow.upmod,
+.arrow.up,
+.arrow.down {
+	height: 20px;
+	width: 20px;
+	border-radius: 20px;
+	transition:200ms;
+}
+
+.arrow.upmod {background-color: orangered !important; margin-bottom: 5px;}
+.arrow.downmod {background-color: #2B9BDB !important; margin-top: 5px;}
+
+/*EXPANDO BUTTONS*/
+.expando-button,
+.expando-button:hover,
+.expando-button.expanded:hover,
+.expando-button.expanded {
+	width: 20px !important; height: 20px !important;
+	transition: 150ms;
+}
+
+.expando-button.expanded {transform: rotate(45deg);-webkit-transform: rotate(45deg);}
+
+.expando-button:hover,
+.expando-button.expanded:hover {opacity: 0.5;}
+
+
+#header-bottom-right a.pref-lang {
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+
+.message-count {left: 2px; top: -6px; background-color: #ff9400;}
+
+/*USER BAR*/
+#header-bottom-right {background: none;
+	top: 43px!important;
+	right: 20px;
+	padding: 0px!important;}
+	
+	 @media screen and (max-width: 1200px) {
+	 #header-bottom-right {
+		 top: 70px !important;
+	 }
+ }
+#header-bottom-right a, #header-bottom-right .user, #header-bottom-right .user .userkarma {
+	color: #FFF;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.res #header-bottom-right #modmail {top: -4px !important;}
+
+.separator {visibility:hidden;}
+
+.gearIcon {background-repeat:no-repeat !important;}
+
+#RESMainGearOverlay {display: none !important;}
+
+/*USERBAR TOGGLE*/
+.res #userbarToggle {
+	width: 11px;
+	height: 48px;
+	background-color: transparent;
+	border: medium none;
+	line-height: 47px;
+	color: #FFF;
+	padding-left: 5px;
+	padding-right: 8px;
+	margin-left: -6px;
+	transition: all 200ms ease 0s;
+	bottom: 2px;
+	border-radius: 0px;
+	margin-bottom: -15px;
+}
+
+.res #userbarToggle:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+#userbarToggle.userbarShow {
+	background-color: rgba(255, 255, 255, 0.1);
+	left: -3px !important;
+	padding-right: 20px;
+	font-size: 25px;
+	padding-left: 15px;
+	margin-left: -12px;
+	transition:200ms;
+	top: -15px !important;
+}
+#userbarToggle.userbarShow:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*GENERAL RES FIXES*/
+.livePreview, .livePreview .md {text-transform: none;}
+
+.RESDialogSmall.livePreview {
+	margin: 15px 0px;
+}
+
+.new-comment .usertext-body {
+	border: none !important;
+ }
+
+/*AD fixes*/
+.organic-listing {border: 0px;}
+
+.infobar.newsletterbar {display: none !important;}
+
+/*MENU AREA*/
+.menuarea {overflow: visible;}
+
+body:not(.search-page) .menuarea {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 20px !important;
+ }
+
+.comments-page .menuarea {
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 5px !important;
+ }
+
+/*SEARCH PAGE*/
+.combined-search-page .searchfacets {
+	margin: 0px !important;
+	max-width: none !important;
+ }
+
+	.combined-search-page .searchfacets > h4.title {color: #444;}
+
+.combined-search-page .search-result-group {
+	padding-left: 0px;
+	padding-right: 0px;
+	max-width: 100%
+ }
+
+.combined-search-page .search-result {
+	margin-bottom: 25px;
+	margin-top: 10px;
+	padding: 0px 30px;
+	border-bottom: 1px solid #E1E1E1;
+	padding-bottom: 20px;
+ }
+
+.combined-search-page .search-result-group .search-result-group-header {
+	color: inherit;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: #eee;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+ }
+
+.combined-search-page .searchpane {background: #444;}
+
+.combined-search-page #search input[type="text"] {max-width: none;color: #fff !important}
+
+.combined-search-page .search-icon {
+	background-size: 30px 30px;
+	height: 30px;
+	width: 30px;
+ }
+
+.combined-search-page .search-submit-button {
+	background: none;
+	border: none;
+	float: left;
+	margin-top: -45px;
+	margin-left: -25px;
+ }
+
+.combined-search-page .search-result-subreddit .search-subscribe-button .add, .combined-search-page .search-result-subreddit .search-subscribe-button .remove {width: auto;}
+
+.combined-search-page .search-result .search-result-body {
+	font-size: 1em;
+	line-height: 1.25em;
+	color: #4F4F4F;
+	padding: 10px 0px;
+	width: 800px;
+ }
+
+.combined-search-page .search-result a, .combined-search-page .search-result a > mark {color: inherit;}
+
+.combined-search-page .search-result .search-result-meta, .combined-search-page .search-result .search-score {
+	font-size: 10px;
+	line-height: 2em;
+	color: #808080;
+	padding: 8px 0px 0px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+ }
+
+#moresearchinfo {
+	border: none;
+	background: rgba(0, 0, 0, 0.9);
+	border-radius: 0 0 10px 10px;
+	line-height: 1.7em;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+ }
+
+.search-page div.content {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-bottom: 300px;
+	margin-right: auto;
+	width: 80%;
+	min-width: 1000px;
+ }
+
+.search-page #noresults {
+	padding-bottom: 20px !important;
+	margin-left: 15px !important;
+ }
+
+.search-page .side {display: none;}
+
+.search-page .menuarea {
+	border-bottom: none;
+	padding: 5px 10px;
+	margin: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: -45px;
+	position: absolute;
+	top: 418px;
+ }
+
+.search-page div#moresearchinfo {
+	background: rgba(0, 0, 0, 0.85);
+	position: absolute;
+	z-index: 9999;
+	padding-left: 22px;
+	padding-bottom: 20px;
+	color: white;
+	padding-right: 20px;
+	border-radius: 0 0 8px 8px;
+	top: 65px;
+ }
+
+.search-page a#search_showmore {
+	position: absolute;
+	top: 100px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #999;
+	font-weight: bold;
+	right: 13px;
+ }
+
+.search-page .searchfacets {
+	border: none;
+	box-shadow: none;
+	background: #E0E0E0;
+	color: #434343;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding-left: 20px;
+ }
+
+.searchfacet a {color: #434343 !important;}
+
+#previoussearch label {
+	display: block;
+	margin: 5px 0px;
+	position: absolute;
+	top: 95px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+ }
+
+.search-page .searchpane {
+	margin: auto;
+	height: 50px;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.24);
+	position: relative;
+	top: -85px;
+	margin-bottom: -45px;
+ }
+
+.search-page #search input[type="submit"], .search-page #search input[type="submit"]:hover {display: none;}
+
+.dropdown.lightdrop .selected {text-decoration: none;}
+
+.search-page #search input[type="text"] {
+	background: none;
+	border: medium none;
+	font-size: 27px;
+	width: 100% !important;
+	position: relative;
+	top: 2px;
+	margin-left: 30px;
+	outline: none;
+ }
+
+.search-page .raisedbox h4 {display: none;}
+
+.search-summary {display: none}
+
+.searchpane-toggle-hide {display: none;}
+
+/*COMMENTS PAGE*/
+
+.tagline .score {font-weight: bold;}
+
+/*COMMENT EXPANDOS*/
+.comment.noncollapsed .midcol {margin-left: 20px;}
+.res .comment.noncollapsed .midcol {margin-left: 10px;}
+
+.commentarea .comment a.expand
+{
+	position:absolute;
+	top:0;
+	left:0;
+	padding:4px 4px 0;
+	height:100%;
+	opacity:.5;
+	box-sizing: border-box;
+	transition: 200ms;
+}
+
+.commentarea .comment a.expand:hover
+{
+	opacity:1;
+	color: white;
+	border-radius: 4px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.res .commentarea .comment a.expand:hover {border-radius: 4px 0px 0px 4px;}
+
+.commentarea .thing,.midcol
+{
+	position:relative
+}
+.comments-page .content .infobar {
+	border: 0px none;
+	background: #fff;
+	max-width: 300px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 11px;
+	border-radius: 4px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.24);
+	margin-top: 30px;
+	margin-left: -10px !important;
+	margin-bottom: 15px;
+ }
+
+.panestack-title a.title-button {
+	position: relative;
+	z-index: 2;
+ }
+
+	.panestack-title a.title-button.gold, .panestack-title a.title-button {
+		padding: 5px 10px;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 9px;
+		color: #fff;
+		border: none;
+		border-radius: 3px;
+	 }
+
+
+.res .comments-page .side {margin: 275px 16px 100px;}
+
+ .comments-page .side {margin: 260px 16px 100px;}
+
+.res .content .RESBigEditorPop {
+	line-height: inherit;
+	font-size: 11px;
+	box-shadow: none;
+	color: #666;
+	border: none;
+	padding: 0;
+	margin-top: 3px;
+	background-color: transparent;
+	background-image: none;
+	/*margin-left: -12px; removed by /u/miltonthecat*/
+ }
+
+.RESSubscriptionButton {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	margin-left: 15px;
+	padding: 5px !important;
+	font-size: 9px;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	color: #fff!important;
+	border: 0 solid #CCC!important;
+	border-radius: 2px;
+	transition: .25s ease
+ }
+
+body.comments-page div.content {background: none !important;}
+
+body.comments-page .link {
+	background: #FFF;
+	border: none;
+	border-radius: 5px 5px 0px 0px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+ }
+
+body.comments-page .sitetable {
+	position: relative;
+ }
+
+.commentarea > .usertext {
+	background-color: #F8F8F8;
+	border-radius: 0px 0px 2px 2px;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.08);
+	overflow: visible;
+	padding-top: 165px;
+	padding-left: 29px;
+	margin-top: -160px;
+	margin-left: -10px;
+	margin-right: -10px;
+ }
+
+.commentarea .panestack-title {
+	margin: 16px 0 -16px 22px;
+	border-bottom: 0
+ }
+
+.commentarea span.title {
+	text-transform: uppercase !important;
+	font-weight: bold;
+	font-size: 13px;
+	position: relative;
+	z-index: 1;
+ }
+
+.commentarea .panestack-title .title {color: #4D5763}
+
+.commentarea .menuarea {
+	margin-left: 22px !important;
+	text-transform: uppercase;
+	font-size: 12px;
+	position: relative;
+	z-index: 1;
+	overflow: visible;
+ }
+
+.commentarea .thing {
+	border-radius: 2px;
+	background-color: #fff;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+	margin: 0 0 8px;
+	padding: 16px 16px 1px 16px;
+ }
+
+.res .commentarea .thing {padding:15px 15px 0px !important}
+
+.commentarea .thing.collapsed {padding: 10px 15px 10px !important;}
+
+.res .commentarea .entry .flat-list {padding-bottom: 8px;}
+
+.comment .flat-list li a[onclick*="reply"] {font-weight: bold;}
+
+.commentarea .child .thing {
+	box-shadow: none;
+	padding: 4px;
+	margin-left: 2px !important;
+	margin-top: 15px;
+	border: 1px solid #fff !important;
+ }
+
+body.comments-page div.content {border: none !important;}
+
+div.sitetable.nestedlisting, div.child {box-shadow: none;}
+
+/*END COMMENT AREA*/
+/*WIKI PAGE*/
+.wiki-page div.content {
+	border: 0px;
+	background: none;
+	margin-right: 335px !important;
+ }
+
+.wiki-page-content .md h1, .wiki-page-content .md h6 {text-transform: none !important;}
+
+.wiki-page .wikititle {
+	background-color: #fff;
+	padding: 12px 16px 10px;
+	border-radius: 5px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 0;
+	color: #444;
+ }
+
+.wiki-page .wiki-page-content .md.wiki h4 {
+	padding: 15px 0px;
+	font-weight: bold;
+ }
+
+.wiki-page .pageactions {
+	background-color: #fff;
+	margin-left: 16px;
+	border-radius: 5px;
+	padding: 8px 16px;
+	font-size: 12px;
+	border: none;
+	text-transform: uppercase;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.08)
+ }
+
+	.wiki-page .pageactions .wikiaction {
+		margin: 0;
+		background-color: transparent;
+		border-radius: 0;
+		color: #B3B3B3;
+	 }
+
+	.wiki-page .pageactions .wikiaction-current {
+		color: #FFFFFF;
+		font-weight: bold;
+	 }
+
+	.wiki-page .pageactions .wikiaction:hover,.wiki-page .pageactions .wikiaction-current:hover {
+		background: none;
+		color: #666;
+		font-weight: bold;
+	 }
+
+.wiki-page .wiki-page-content {
+	margin: 16px 0px 16px 0;
+	background-color: #fff;
+	padding: 16px;
+	border-radius: 2px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.08)
+ }
+
+	.wiki-page .wiki-page-content .wiki>.toc>ul {border: none}
+
+	.wiki-page .wiki-page-content .wiki.md {color: #4D5763;}
+
+		.wiki-page .wiki-page-content .wiki.md h2 {color: #444;}
+
+		.wiki-page .wiki-page-content .wiki.md p {
+			font-size: 14px;
+			line-height: 1.4285714285714em
+		 }
+
+	.wiki-page .wiki-page-content hr {
+		border-style: solid;
+		border-color: #e5e5e5
+	 }
+
+/*SUBMIT PAGE*/
+.submit-page .submit_text {width: 640px !important;}
+
+	.submit-page .submit_text.enabled {text-transform: none !important;}
+
+#text-field textarea {
+		background-image:url(%%textarea-bg-light%%);
+		background-repeat:no-repeat;
+		background-position:center center;
+}
+
+#text-field textarea:focus {
+		background-image:none;
+}
+
+.submit-page .content form>.spacer:last-of-type:hover::after {
+	content: "Don't forget to add flair after you submit your post!";
+	color: orangered;
+	font-size:18px;
+	font-weight:bold;
+	position:relative;
+	top:10px;
+	margin-bottom:-23px;
+	display:block;
+	text-align:center;
+}
+
+.formtabs-content .infobar {
+	font-size: 15px;
+	font-weight: bold;
+	border: none;
+	background-color: white;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+	padding: 20px;
+	border-radius: 4px;
+	text-align: center;
+	color: #000;
+ }
+
+#sr-more-link {background-color: #fff !important;}
+
+.roundfield textarea, .roundfield input[type="text"], .roundfield input[type="url"], .roundfield input[type="password"], .roundfield input[type="number"], .roundfield .usertext-edit,.submit-page .markdownEditor-wrapper {width: 100%; outline: none;}
+
+.roundfield .title {color: #666;}
+
+.roundfield {
+	background: #FFF;
+	width: auto;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 1.5em;
+	border-radius: 4px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+ }
+
+
+
+	.roundfield input[type="text"] {margin-bottom: 15px;}
+
+
+.content.submit .info-notice {
+	margin-bottom: 12px;
+	margin-left: 10px;
+	margin-top: -10px;
+	margin-right: 10px;
+	font-size: 12px;
+	padding: 9px;
+	background-color: #FFF;
+	border: none;
+ }
+
+.submit-page .content .spacer {margin-left: 0px;}
+
+.submit-page .content {
+	width: 700px;
+	margin: 0 auto;
+ }
+
+.submit-page div.content {
+	margin-top: 20px !important;
+	margin-bottom: 50px !important;
+	background: none !important;
+	border: none !important;
+ }
+
+.submit-page .tabmenu.formtab .selected a {
+	color: #cecece;
+	background-color: transparent;
+	border: none;
+	font-size: inherit;
+ }
+
+.submit-page ul.tabmenu.formtab {
+	display: block;
+	padding-left: 10px;
+	font-size: larger;
+	border-radius: 4px;
+ }
+
+.submit-page .tabmenu li a {
+	background: transparent;
+	border: none;
+ }
+
+.submit-page .tabmenu {margin-top: 0px;}
+
+.formtabs-content {border-top: 0px solid!important;}
+
+body:not(.submit-page) .tabmenu::after {display: none;}
+
+.submit-page #newlink.submit.content .btn {
+	height: 42px;
+	line-height: 41px;
+	width: 97%;
+	margin-left: 10px;
+ }
+
+/*Sidebar*/
+.sidecontentbox .title h1 {
+	color: #555;
+	font-weight: bold;
+	font-size: 14px;
+ }
+
+.md-container {text-align: left;}
+
+.titlebox {text-align: center;}
+
+.submit-page .side, .submit-page .content h1 {display: none !important;}
+
+.formtabs-content {border-top: 0px solid!important;}
+
+body:not(.submit-page) .tabmenu::after {
+	position: absolute;
+	height: 49px;
+	content: '';
+	z-index: -1;
+	left: 0px;
+	right: 0px;
+	background: #666;
+ }
+
+.formtabs-content {
+	width: auto;
+	border-top: 4px solid #5f99cf;
+	padding: 10px;
+	margin-top: 15px;
+ }
+
+/*No comment message*/
+.comments-page #noresults:after {content: ".";}
+
+/* --- Message the mod button --- */
+.sidecontentbox .title h1 {display: inline-block;}
+
+.sidecontentbox a.helplink {
+	margin-right: 30px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width: 215px;
+	border: none;
+	border-radius: 4px;
+	color: #fff!important;
+	text-align: center;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+	line-height: 30px;
+	transition: .25s ease
+ }
+
+	.sidecontentbox a.helplink:hover {text-decoration: none;}
+
+	.sidecontentbox a.helplink:active {background-color: #ae9df4}
+
+/*OP TAG*/
+
+div .thing .tagline .author.submitter:before,
+div .thing .tagline .author.submitter {
+	font-weight: Bold;
+	line-height: 20px;
+	color: #FFF;
+	display: inline-block;
+	font-size: 10px;
+}
+
+div .thing .tagline .author.submitter:before {
+	background: RoyalBlue;
+	padding: 0 7px 0 10px;
+	border-radius: 20px 0px 0px 20px;
+	font-size: 10px;
+	content: "OP ";
+	margin-right: 7px;
+ }
+
+div .thing .tagline .author.submitter {
+	background: #27408b !important;
+	padding: 0px 10px 0px 0px;
+	border-radius: 20px;
+	transition: 300ms;
+ }
+
+ div .thing .tagline .author.submitter:hover {background: RoyalBlue !important; text-decoration: none;}
+
+/*MODERATOR DISTINGUISH TAG*/
+
+div .thing .tagline .author.moderator:before,
+div .thing .tagline .author.moderator,
+div .thing .tagline .author.admin:before,
+div .thing .tagline .author.admin {
+	font-weight: Bold;
+	line-height: 20px;
+	color: #FFF;
+	display: inline-block;
+	font-size: 10px;
+}
+
+div.thing .tagline .author.moderator:before,
+div.thing .tagline .author.admin:before {
+	padding: 0 7px 0 10px;
+	border-radius: 20px 0px 0px 20px;
+	font-size: 10px;
+	margin-right: 7px;
+}
+
+body div .thing .tagline .author.moderator,
+body div .thing .tagline .author.admin {
+	padding: 0px 10px 0px 0px;
+	border-radius: 20px;
+	transition: 300ms;
+}
+
+div.thing .tagline .author.moderator:before {background: #282 !important; content: "Mod ";}
+
+body div .thing .tagline .author.moderator {background: #1A4B17 !important;}
+
+body div .thing .tagline .author.moderator:hover {background: #282 !important; text-decoration: none;}
+
+.tagline .moderator:after {content: "oderator - speaking officially.";}
+
+a.author.moderator:after {content: "";}
+
+/*REDDIT ADMIN DISTINGUISH*/
+
+div.thing .tagline .author.admin:before {background-color: #fe506e !important; content: "Admin ";}
+
+body div .thing .tagline .author.admin {background: #c41959 !important;}
+
+body div .thing .tagline .author.admin:hover {background: #fe506e !important; text-decoration: none;}
+
+.tagline .admin:after {content: "dmin - speaking officially";}
+
+a.author.admin:after {content: "";}
+
+a.author.admin:before {content: "";}
+
+a.author.moderator:after {content: "";}
+
+/*Body and post appearance*/
+.link {
+	margin-bottom: 0px;
+ }
+
+body:not(.comments-page) div.content .entry {
+	border-bottom: 1px solid #e1e1e1;
+	padding: 13px;
+}
+
+.comments-page .link {padding: 20px 10px;}
+
+/*Image sidebar sub title*/
+.res h1.redditname {overflow: visible;}
+
+/* RES Selection */
+.res .RES-keyNav-activeElement {
+	outline: 0px dashed #EEEEEE !important;
+	transition: all 0.15s ease;
+}
+
+.res .entry {transition: all 0.10s ease;}
+
+.RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container {
+	padding-left: 15px !important;
+	border-left: 3px solid;
+}
+
+div.commentarea div.RES-keyNav-activeElement .md {
+	background-color: transparent !important;
+}
+
+/*Body background*/
+body {background: #e6e6e8;}
+
+/*Expando no outline*/
+.entry.RES-keyNav-activeElement div.md, .commentarea .entry.RES-keyNav-activeElement div.noncollapsed, .entry.RES-keyNav-activeElement .usertext-body, .new-comment .usertext-body .md {
+	outline: medium none !important;
+	border: 0px none !important;
+ }
+
+/*RES Never Ending Reddit*/
+.NERPageMarker, #progressIndicator {
+	font-size: 14px !important;
+	font-weight: bold !important;
+	text-align: left !important;
+	background-color: transparent !important;
+	border: none !important;
+	border-radius: 0 !important;
+	padding: 10px !important;
+	text-transform: uppercase;
+	margin-left: 20px;
+ }
+
+#progressIndicator {
+	font-size: 12px !important;
+	text-align: center;
+	text-transform: uppercase;
+	color: #666;
+ }
+
+	#progressIndicator h2 {
+		text-align: center;
+		font-size: 16px !important;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-top: 5px;
+	 }
+
+
+#sr-header-area {
+	background-color: rgba(0, 0, 0, 0.5);
+	border: none;
+	color: #fff;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-weight: 400;
+	font-size: 9px;
+ }
+
+
+		#sr-header-area .drop-choices.srdrop,
+		.res #srList,
+		.res #RESSubredditGroupDropdown {
+		  top: 30px!important;
+		  margin-left: 10px;
+		  border: 0;
+		  padding: 10px;
+		  text-transform: uppercase;
+		  letter-spacing: .5px;
+		  font-size: 9px
+		  border-radius: 6px;
+		}
+
+		.res #srList {background: rgba(0, 0, 0, 0.75);}
+		#sr-header-area .drop-choices.srdrop { top: 21px!important; background: rgba(0, 0, 0, 0.9); }
+
+		.res #srList {
+		  background: transparent;
+		  position: fixed;
+		  left: 50%;
+		  margin-left: -250px;
+		  width: 500px;
+		  height: calc(100vh - 60px);
+		  padding-top: 0;
+		  overflow: visible;
+		  max-height: none!important;
+		  opacity: 1;
+		  pointer-events: auto;
+		  transition: .2s;
+		  z-index: 2147483647
+		}
+
+		.res #srList:not([style*="display: block"]),
+		.res #srList:not([style*="display: block"]):before,
+		.res #srList:not([style*="display: block"]):after {
+		  opacity: 0;
+		  pointer-events: none
+		}
+
+		.res #srList tbody { display: block; max-height: calc(100% - 50px); overflow: scroll; background: transparent; }
+
+		.res #srList:before {
+		  position: fixed;
+		  left: 50%;
+		  margin-left: -250px;
+		  top: 30px;
+		  width: 500px;
+		  height: calc(100vh - 60px);
+		  background: rgba(0, 0, 0, 0.8);
+		  content: "";
+		  z-index: -1;
+		  transition: .2s opacity;
+		  border-radius: 4px;
+		}
+
+		.res #srList:after {
+		  position: fixed;
+		  left: 0;
+		  top: 0;
+		  width: 100vw;
+		  height: 100vh;
+		  padding: 50px 70px 0 0;
+		  background: rgba(0,0,0,.6);
+		  background-size: 100px 100px, cover, cover;
+		  background-position: center, center, center;
+		  content: "✕";
+		  text-align: right;
+		  text-transform: lowercase;
+		  font-size: 40px;
+		  font-weight: 100;
+		  color: #fff;
+		  z-index: -2;
+		  transition: .2s opacity;
+		  pointer-events: none;
+		  margin-left: -35px; /*Adjusts the close icon*/
+		}
+
+		.sortAsc, .sortDesc { margin-top: -46px; margin-right: 10px }
+
+		#sr-header-area .drop-choices.srdrop a,
+		.res #srList tr,
+		.res #RESSubredditGroupDropdown li a {
+		  height: 25px;
+		  padding: 0 10px;
+		  border-top: solid 1px #444;
+		  border-bottom: 0;
+		  line-height: 25px;
+		  color: #ccc
+		}
+
+		.res #srList thead {
+		  display: block;
+		  height: 50px;
+		}
+
+		#sr-header-area .drop-choices.srdrop:before,
+		.res #srList thead td:nth-of-type(1) {
+		  height: 50px;
+		  line-height: 45px;
+		  font-size: 13px;
+		  font-weight: bold;
+		  color: #fff;
+		  content: "SUBSCRIBED SUBREDDITS"
+		}
+
+		#sr-header-area .drop-choices.srdrop:before { padding: 0 50px 0 10px }
+
+		.res #srList thead td:nth-of-type(1):before { content: "SUBSCRIBED " }
+		.res #srList thead td:nth-of-type(1):after { margin-left: -5px; content: "S" }
+
+		.res #srList thead tr {
+		  height: 50px;
+		  line-height: 50px;
+		  white-space: nowrap
+		}
+
+		.res #srList td { padding: 0 }
+		.res #srList tr td:nth-of-type(1) { width: 300px }
+		.res #srList td.RESvisited { width: 120px }
+		.res #srList td.RESshortcut { width: 60px }
+
+		.res #srList td.RESvisited,
+		.res #srList td.RESshortcut { text-transform: uppercase }
+
+		.res #srList a,
+		.res #RESSubredditGroupDropdown .RESShortcutsEditButtons .res-icon { color: #fff }
+
+		#sr-header-area .drop-choices.srdrop a,
+		.res #RESSubredditGroupDropdown li a { display: block; min-width: 50% }
+
+		.res #srList thead tr,
+		.res #RESSubredditGroupDropdown li:nth-of-type(1) a { border: 0 }
+
+		.res #RESSubredditGroupDropdown li + .RESShortcutsEditButtons { margin: 0; border: 0; padding: 0 }
+		.res #RESSubredditGroupDropdown li + .RESShortcutsEditButtons a.delete { text-align: right }
+
+		.res #RESSubredditGroupDropdown li { margin: 0; padding: 0 }
+
+		.res #srList tr:hover,
+		.res #RESSubredditGroupDropdown li:hover { background: none }
+
+
+
+body.res #sr-header-area .sr-bar a.RESShortcutsCurrentSub {color: #fff!important; /*Color of sub selector, active*/}
+
+#sr-header-area a {font-size: 9px; transition: 200ms;}
+
+	#sr-header-area a:hover {font-weight: bold; color: #fff !important}
+
+.sr-bar a {color: #fff;}
+
+div.score {
+	font-weight: 500;
+	color: #999;
+ }
+
+.md p, .md h1 {line-height: 20px;}
+
+.md ul {line-height: 20px;}
+
+h2 {
+	color: #252525;
+	font-size: 18px;
+	font-weight: normal;
+ }
+
+ /*Linkinfo*/
+
+.side div.score, span.totalvotes {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 500 !important;
+	color: #444;
+	padding: 0px 16px;
+}
+ .linkinfo .score .number {
+	font-size: 14px;
+	text-align: left;
+ }
+
+ .linkinfo .totalvotes {font-size: 100%;}
+
+.linkinfo {
+	border: none !important;
+	background-color: #fff;
+	top: 246px;
+	font-family: inherit !important;
+	padding: 0px;
+	position: absolute;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+	border-radius: 4px;
+	width: 300px;
+ }
+
+ .linkinfo .date {
+	font-weight: bold;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #666;
+	text-align: left;
+	padding: 14px 16px 0px;
+}
+
+.linkinfo .shortlink input {
+	box-shadow: none !important;
+	font-family: monospace !important;
+	transition: all 0.15s ease 0s !important;
+	font-size: 13px;
+	color: white;
+	border: medium none;
+	width: 280px;
+	background: #444;
+	border-radius: 0px 0px 4px 4px;
+	padding: 10px;
+	text-align: center;
+}
+
+.linkinfo .shortlink {
+	text-transform: uppercase;
+	margin-top: 20px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 0px;
+}
+
+
+.comment .collapsed {
+	padding-left: 24px;
+	padding-bottom: 10px;
+	padding-top: 2px;
+ }
+
+.comment .midcol {width: 20px !important;}
+
+.gadget .midcol {width: 20px !important;}
+
+/*Sub Selector*/
+/*Header*/
+#header {
+	background: #1C1E20;
+	border: none;
+	height: 90px;
+ }
+
+#header span.pagename.redditname a{
+
+}
+@keyframes godown {
+0% {opacity:0;transform:translateY(-60px);-webkit-transform:translateY(-60px)}
+100% {opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}
+}
+
+@-moz-keyframes godown {
+0% {opacity:0;transform:translateY(-60px);-webkit-transform:translateY(-60px)}
+100% {opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}
+}
+
+@-webkit-keyframes godown {
+0% {opacity:0;transform:translateY(-60px);-webkit-transform:translateY(-60px)}
+100% {opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}
+}
+
+@-o-keyframes godown {
+0% {opacity:0;transform:translateY(-60px);-webkit-transform:translateY(-60px)}
+100% {opacity:1;transform:translateY(0px);-webkit-transform:translateY(0px)}
+}
+
+.pagename a {
+	height: 65px;
+	width: 100px;
+	text-indent: -99999px;
+	background-repeat: no-repeat;
+ }
+	span.pagename.redditname a:hover {opacity: 0.8}
+
+.pagename {font-size: 0px;}
+
+.subtitle, .sidebox .spacer, .sidebox .spacer a, .sidebox.create, .morelink .nub {display: none;}
+
+/*Disable CSS style toggle*/
+.res .titlebox>div:first-of-type, .titlebox form.toggle {
+	font-weight: normal;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+ }
+
+/*Subscribe+Sidebar Toggles*/
+
+.fancy-toggle-button .add,
+.fancy-toggle-button .remove {
+	padding: 5px 20px;
+	border-radius: 20px;
+}
+
+.res .fancy-toggle-button .remove{padding: 5px 8px !important;}
+
+.res .fancy-toggle-button .add,
+.res .fancy-toggle-button .remove,
+.fancy-toggle-button .add,
+.fancy-toggle-button .remove,
+.RESshortcutside,
+.RESDashboardToggle,
+.RESshortcutside.remove,
+.RESDashboardToggle.remove {
+	font-size: 9px !important;
+	border: none !important;
+	text-transform: uppercase;
+	transition: 200ms;
+	background-image: none !important;
+}
+
+.res .fancy-toggle-button .add,
+.res .fancy-toggle-button .remove,
+.RESshortcutside,
+.RESDashboardToggle,
+.RESshortcutside.remove,
+.RESDashboardToggle.remove {
+	padding: 5px 8px !important;
+	border-radius:3px !important;
+}
+
+/*End sidebar toggles*/
+
+/* reddit name on sidebar below search box */
+.titlebox h1.redditname {
+	width: 100%;
+	text-align: center;
+ }
+
+.titlebox .redditname {height: 25px}
+
+.res .titlebox .fancy-toggle-button {
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-left: 0px;
+	width: auto;
+ }
+
+.titlebox .fancy-toggle-button {
+	margin: 0px auto;
+	width: 100%;
+ }
+
+.titlebox .fancy-toggle-button {
+	display: inline-block;
+	margin-top: 4px;
+	transition: 300ms;
+ }
+
+.flat-list {
+	list-style-type: none;
+	display: inline;
+ }
+
+/*COMMENTS BUTTON COLOR*/
+.entry .buttons .may-blank {
+	font-weight: bold;
+ }
+
+.link .tagline {
+	color: #666;
+	font-size: 12px;
+	margin-top: 3px;
+ }
+
+.entry .buttons li a, .entry .buttons li + li {color: #666;}
+
+
+.comment .flat-list li a:hover,
+.link .entry .buttons li a:hover,
+.link .domain a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	transition: 200ms;
+ }
+
+/*COMMENTS AND EVERYTHING ELSE BUTTONS*/
+button {
+	border-radius: 4px;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 2.16;
+	text-align: center;
+	white-space: nowrap;
+	border: 0px none;
+	padding: 0px 1.06667em;
+	text-transform: uppercase;
+	transition: all 200ms ease 0s;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+/*BODY MARGINS AND SETTINGS */
+body:not(.submit-page) .tabmenu::after {
+	position: absolute;
+	height: 49px;
+	content: '';
+	z-index: -1;
+	left: 0px;
+	right: 0px;
+	background: #666;
+ }
+
+/* TAB BAR SETTINGS */
+#sr-header-area {
+	background-color: #1C1E20;
+	width: 100%;
+	z-index: 9999;
+ }
+
+/* BODY MARGINS */
+div.content {
+	border-radius: 4px;
+	margin: 60px 335px 10px 16px;
+	border: 1px solid #e1e1e1;
+	background-color: #fff;
+	font-size: 12px;
+ }
+
+.midcol {margin-left: 0;}
+
+body >.content .link .rank, .rank-spacer {display: none;}
+
+body > .content .link .midcol, .midcol-spacer { width: 40px !important;}
+
+body:not(.comments-page) > .content .link .midcol, .midcol-spacer {margin: 10px 0px;}
+
+
+.link .title {font-weight: normal;}
+
+	.link .title .domain {
+		color: #999;
+		font-size: 0;
+		font-weight: normal
+	 }
+
+		.link .title .domain::before {font-size: 12px}
+
+		.link .title .domain a {
+			font-size: 12px;
+			margin-left: 1px;
+			margin-top: -10px;
+		 }
+
+
+/*SIDEBAR*/
+.side {
+	border: 1px solid #e1e1e1;
+	border-radius: 5px;
+	padding: 0px;
+	margin: 155px 16px 100px;
+	width: 300px;
+	background: #ffffff;
+ }
+
+#searchexpando {
+	border-radius: 0px 0px 4px 4px;
+	text-align: center;
+	width: 280px;
+	background: rgba(0, 0, 0, 0.85);
+	border: medium none;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+	color: white;
+	margin-top: 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 11px;
+	line-height: 2.5em;
+	height: auto;
+ }
+
+.infobar {border: 0px}
+
+.side #search {
+	top: 105px;
+	position: absolute;
+	margin-right: 25px;
+	z-index: 4;
+	width: 317px;
+ }
+
+body:not(.search-page) #search input[type=text] {
+	border-radius: 6px;
+	padding:9px;
+	border: 1px solid #e1e1e1;
+	text-align: center;
+	transition: 300ms;
+ }
+	body:not(.search-page) #search input[type=text]:hover {border: 1px solid #a0a0a0;}
+
+	body:not(.search-page) #search input[type=text]:focus {
+		border-color: #aaa;
+		text-align: left;
+		padding-left: 8px;
+		outline: 0;
+		padding-left: 6px;
+		animation-name: search;
+		animation-duration: 0.4s;
+		animation-timing-function: ease;
+		animation-iteration-count: 1;
+		animation-play-state: running;
+	 }
+@-webkit-keyframes search {
+	0% {padding-left: 125px;}
+	8% {padding-left: 107px;}
+	15% {padding-left: 89px;}
+	30% {padding-left: 71px;}
+	50% {padding-left: 53px;}
+	60% {padding-left: 18px;}
+	100% {padding-left: 6px;}
+}
+@keyframes search {
+	0% {padding-left: 125px;}
+	8% {padding-left: 107px;}
+	15% {padding-left: 89px;}
+	30% {padding-left: 71px;}
+	50% {padding-left: 53px;}
+	60% {padding-left: 18px;}
+	100% {padding-left: 6px;}
+}
+
+/*SUBMIT LINKS */
+.morelink {
+	border: none;
+	letter-spacing: 0;
+	font-size: 14px !important;
+	border-radius: 10px;
+	padding: 0px;
+	text-transform: uppercase;
+	transition:200ms;
+	border-radius: 10px;
+	
+ }
+
+	.morelink a, .morelink a:hover, .morelink a:visited {color: #fff;}
+
+/*RESTRICTED*/
+.disabled .morelink, .disabled .morelink:hover {
+	background-image: none !important;
+	top: 151px;
+	position: absolute;
+	width: 300px;
+ }
+
+.side .submit-link {
+	position: absolute;
+	width: 300px;
+	top: 151px;
+	right: 16px;
+ }
+
+.side .submit-text {
+	position: absolute;
+	width: 300px;
+	top: 199px;
+	right: 16px;
+ }
+
+.morelink .nub {display: none;}
+
+.titlebox {padding: 12px;}
+
+.side .titlebox .md h3 a {margin-left: 5px;}
+
+.side md {
+	padding-left: 5px;
+	padding-right: 5px;
+ }
+
+.side #moderation_tools {
+	padding-left: 15px;
+	margin-bottom: 15px;
+ }
+
+.sidecontentbox {padding: 15px;}
+
+.infobar {
+	background: #f2f2f2;
+	border: 1px solid #ebebeb;
+ }
+.message-count {
+	position: relative;
+	top: -2px;
+ }
+
+.commentarea {padding: 0 10px 10px;}
+
+.users-online {color: #535353;}
+
+	.users-online:before {display: none;}
+	
+	.subscribers .word {
+display: none;
+}  
+
+.titlebox .subscribers .number:after {content: " Registered Avatars"}
+.flair, .linkflairlabel {
+	margin-right: 0.8em;
+	padding: 2px 4px;
+ }
+
+.nextprev, .next-suggestions {
+	margin: 10px !important;
+	padding: 10px !important;
+	display: block;
+ }
+
+.nextprev a, .next-suggestions a {font-weight: normal !important;}
+
+.link .usertext .md {border: 1px solid #e1e1e1;}
+
+.link .usertext-body .md {
+	border: none !important;
+	background: none !important;
+ }
+
+
+.link .score.likes {color: #FF5F3F;}
+.link .score.dislikes {color: #2B9BDB;}
+.score.unvoted {color: #666;}
+div.midcol.likes, div.midcol.dislikes, div.midcol.unvoted,div.reddit-entry {padding: 0px 10px;}
+
+#header-img.default-header:hover, #header-img:hover {opacity: .7;}
+
+.users-online {margin-bottom: 0.5em;} 
+
+.titlebox span.subscribers,.titlebox .number {
+	font-size: 12px;
+	position: relative;
+ }
+
+.titlebox span.subscribers, .titlebox .users-online {
+	color: #999;
+	position: relative;
+	top: 10px;
+ }
+
+div.leavemoderator {
+	margin-left: 18px;
+	background: none;
+ }
+
+.titlebox .users-online {
+	font-size: 12px;
+	position: relative;
+	
+ }
+.users-online .word {
+display: none;
+}  
+
+
+
+	.titlebox .users-online:before {display: none}
+
+	.titlebox .users-online .number {font-style: italic}
+
+		.titlebox .users-online .number:after {content: " Being Processed"}
+
+.titlelebox .word {display: none}
+
+.titlebox .users-online,.titlebox .number {cursor: text}
+
+
+/* Text */
+.side .md .-blocks,.side .md .-lists,.side .md pre,.side .md blockquote,.side .md table,.side .md p,.side .md ul,.side .md ol {margin: 15px 0;}
+
+/*SIDEBAR STYLING*/
+
+.titlebox h1.redditname {font-weight:normal;}
+.side .md h1 {
+	position: relative;
+	margin: 0 20px 20px 20px;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+
+.side .md h2 {
+	position: relative;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 0px;
+	font-size: 13px!important;
+	font-weight: bold;
+	background: #444;
+	text-align: center;
+	border-radius: 5px 5px 0 0;
+}
+
+.side .md h2 a {color: #A4D11B}
+
+.side .md h2:after {
+	top: 100%;
+	left: 5%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-width: 7px;
+	margin-left: -7px; }
+
+.side .md h2 + ul {
+	list-style-position: outside;
+	border-radius: 0 0 5px 5px;
+	background:#efefef;
+	border-top: 0;
+	padding: 10px 10px 10px 26px;
+	margin: 0 0px 20px 0px;
+}
+
+
+.side .md h2 + ul li { margin-bottom: 10px; font-size: 95%; }
+
+.side .usertext {margin-top: 20px; font-size: 13px !important;}
+
+.may-blank-within {font-size: 13px !important;}
+
+.md-container {font-size: 13px !important;}
+
+/*FRIENDLY FIX*/
+.side .md h5:first-of-type{
+	font-size:13px;
+	text-align:center;
+	margin-bottom:10px;
+}
+
+/*DECIMAL RULE BOX*/
+
+.side .md ul:first-of-type{
+	list-style-type:decimal;
+}
+
+/*OCULUS OFFICIAL TABLE*/
+.side .md ul:nth-of-type(3){
+	padding-left:26px;
+	height:96px;
+}
+.side .md ul:nth-of-type(3) li{
+	float:left;
+	margin:0px;
+	padding:0px;
+	width:120px;
+	height:20px;
+	padding-top:6px;
+}
+
+/*FILTER BY FLAIR*/
+
+.side .md ul:nth-of-type(5){
+	list-style-type:none;
+	text-align:center;
+	height:96px;
+	padding:0px;
+}
+
+.side .md ul:nth-of-type(5)>li{
+	width:92px;
+	height:20px;
+	padding-top:4px;
+	margin:0px;
+	float:left;
+}
+
+.side .md ul:nth-of-type(5)>li a{
+	color:#fff;
+	font-weight:bold;
+}
+
+/*TECH SUPPORT*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(1){
+	background-color:#f0a77a;
+}
+/*TECH SUPPORT:HOVER*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(1):hover{
+	background-color:#ffc29c;
+}
+/*NEWS*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(2){
+	background-color:#366ab3;
+}
+/*NEWS:HOVER*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(2):hover{
+	background-color:#3d79cc;
+}
+/*SOFTWARE AND GAMES*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(3){
+	background-color:#5bbdc2;
+}
+/*SOFTWARE AND GAMES:HOVER*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(3):hover{
+	background-color:#67d5db;
+}
+/*DISCUSSION*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(4){
+	background-color:#FDB833;
+}
+/*DISCUSSION:HOVER*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(4):hover{
+	background-color:#fdc65b;
+}
+/*FLUFF*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(5){
+	background-color:#e39ab4;
+}
+/*FLUFF:HOVER*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(5):hover{
+	background-color:#fcacc8;
+}
+/*OFFICIAL*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(6){
+	background-color:#1574D4;
+}
+/*OFFICIAL:HOVER*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(6):hover{
+	background-color:#148aff;
+}
+/*EVENT*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(7){
+	background-color:#813cb0;
+}
+/*EVENT:HOVER*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(7):hover{
+	background-color:#9444c9;
+}
+/*VIDEO*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(8){
+	background-color:#ba3858;
+}
+/*VIDEO:HOVER*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(8):hover{
+	background-color:#d43f65;
+}
+/*HARDWARE*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(9){
+	background-color:#9cba65;
+}
+/*HARDWARE:HOVER*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(9):hover{
+	background-color:#b2d472;
+}
+/*REVIEWS*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(10){
+	background-color:#995951;
+}
+/*REVIEWS:HOVER*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(10):hover{
+	background-color:#b3685f;
+}
+/*TIPS & TRICKS*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(11){
+	background-color:#dec943;
+}
+/*TIPS & TRICKS:HOVER*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(11):hover{
+	background-color:#f7e04a;
+}
+/*SHIPPING*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(12){
+	background-color:#666666;
+}
+/*SHIPPING:HOVER*/
+.side .md ul:nth-of-type(5)>li:nth-of-type(12):hover{
+	background-color:#808080;
+}
+
+/*REQUEST DEVELOPER FLAIR*/
+.side .md h1:last-of-type a::before{
+	content:url(%%oculus-dev-flair-24%%);
+	padding-right: 5px;
+	position:relative;
+	top:4px;
+}
+
+.side .md h1:last-of-type a{
+	color:#0079d3;
+}
+
+/*SIDEBAR BUTTONS COLORS*/
+
+.fancy-toggle-button .add,
+.RESshortcutside,
+.RESDashboardToggle
+
+	{background: #80d04b;}
+
+/*SIDEBAR BUTTONS HOVER*/
+
+.fancy-toggle-button .add:hover,
+body.res .RESshortcutside:hover,
+.RESDashboardToggle:hover
+
+	{background: #A6DE81;}
+
+/*SIDEBAR BUTTONS ACTIVE*/
+
+.fancy-toggle-button .add:active,
+body.res .RESshortcutside:active,
+.RESDashboardToggle:active
+
+	{background: #599134;}
+
+
+/*BUTTONS ON SIDEBAR - Buttonstyle one */
+.side .titlebox .md h3 a {
+	border-radius: 3.5px;
+	padding: 8px 0px;
+	border: none;
+	color: #fff;
+	letter-spacing: 0;
+	font-weight: bold;
+	text-align: center;
+	transition: .3s background ease;
+	font-size: 12px !important;
+	width: 276px;
+	margin: 1.5em 0;
+	display: block;
+ }
+
+/*BUTTONS ON SIDEBAR - Buttonstyle two */
+.side .titlebox .md h4 a {
+	border-radius: 3.5px;
+	padding: 8px 0px;
+	border: none;
+	color: #fff;
+	letter-spacing: 0;
+	font-weight: bold;
+	text-align: center;
+	transition: .3s background ease;
+	font-size: 12px !important;
+	width: 276px;
+	margin: 1.5em 0;
+	display: block;
+ }
+
+.titlebox .bottom {display: none}
+
+.sidecontentbox .collapse-button {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	line-height: 10px;
+	text-align: center;
+	font-size: 10px;
+	margin: 1px 8px;
+	background-color: transparent;
+	color: RoyalBlue;
+	vertical-align: middle;
+	border-radius: 2px;
+	border: 1px solid RoyalBlue;
+ }
+
+	.sidecontentbox .collapse-button:hover {
+		background-color: transparent;
+		color: #009884;
+		vertical-align: middle;
+		border-radius: 2px;
+		border: 1px solid #27408b;
+	 }
+
+.side .sidecontentbox .content {
+	border: none;
+	padding: 8px 0
+ }
+
+/* Recently viewed links */
+.gadget .midcol {width: 38px}
+
+/* Body Content - Frontpage */
+.content {
+	margin: 96px 16px 0;
+	padding: 0
+ }
+
+.entry .buttons li a, .entry .buttons li + li {font-weight: normal;}
+
+/*FLAIRS*/
+
+.flair-OculusHomeFlair[title],
+.flair-DeveloperFlair[title],
+.flair-OculusEmployeeFlair[title],
+.flair-JournalistFlair[title],
+.flair-YoutuberFlair[title],
+.flair-StreamerFlair[title] {
+	color: white;
+	font-size: 10px;
+	padding: 0px 10px 0px 0px;
+	-webkit-transition: 300ms;
+	transition: 300ms;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 20px;
+}
+
+.flair-OculusHomeFlair[title]:before,
+.flair-DeveloperFlair[title]:before,
+.flair-OculusEmployeeFlair[title]:before,
+.flair-JournalistFlair[title]:before,
+.flair-YoutuberFlair[title]:before,
+.flair-StreamerFlair[title]:before {
+	font-weight: Bold;
+	display: inline-block;
+	font-size: 10px;
+	padding: 4px 8px;
+	border-radius: 20px 0px 0px 20px;
+	margin-right: 8px;
+}
+
+.flair-OculusHomeFlair[title] {background: #ffffff; color: #000000;}
+.flair-DeveloperFlair[title] {background: #404C54; color: #ffffff;}
+.flair-OculusEmployeeFlair[title] {background: #1574D4;}
+.flair-JournalistFlair[title] {background: #FFF96B; color: #000000;}
+.flair-YoutuberFlair[title] {background: #CD201F; color: #ffffff;}
+.flair-StreamerFlair[title] {background: #6541A5; color: #ffffff;}
+
+.flair-OculusHomeFlair[title]:before {background: #000000; color: #ffffff;}
+.flair-DeveloperFlair[title]:before {background: #48555E; color: #ffffff;}
+.flair-OculusEmployeeFlair[title]:before {background: #105BA6;}
+.flair-JournalistFlair[title]:before {background: #FFF61F; color: #000000;}
+.flair-YoutuberFlair[title]:before {background: #A11918; color: #ffffff;}
+.flair-StreamerFlair[title]:before {background: #4F3380; color: #ffffff;}
+
+.flair-OculusHomeFlair[title]:hover {background: #777879; color: #ffffff;}
+.flair-DeveloperFlair[title]:hover {background: #5E6F7B; color: #ffffff;}
+.flair-OculusEmployeeFlair[title]:hover {background:#318EEB;}
+.flair-JournalistFlair[title]:hover {background: #FFFB9E; color: #000000;}
+.flair-YoutuberFlair[title]:hover {background: #E23E3D; color: #ffffff;}
+.flair-StreamerFlair[title]:hover {background: #7F5BBE; color: #ffffff;}
+
+.flair-OculusHomeFlair[title]:before {content: 'Oculus ID:';}
+.flair-DeveloperFlair[title]:before {content: 'Developer';}
+.flair-OculusEmployeeFlair[title]:before {content: 'Oculus';}
+.flair-JournalistFlair[title]:before {content: 'Journalist';}
+.flair-YoutuberFlair[title]:before {content: 'YouTuber';}
+.flair-StreamerFlair[title]:before {content: 'Streamer';}
+
+.titlebox form.toggle {background: none;}
+
+.titlebox .tagline {
+	text-align: center;
+	max-height: 50px;
+ }
+
+.side .tagline {color: transparent;}
+
+/*NO PRESET DEFAULT FLAIR*/
+.linkflairlabel {
+	background: RoyalBlue;
+	color: #FFF;
+	font-weight: bold;
+	padding: 2px 10px;
+}
+
+/*COLORFUL LINK FLAIRS*/
+.linkflairlabel {
+	max-width: none;
+	border: 0px none;
+	margin-right:5px !important;
+ }
+ 
+ .title .linkflairlabel {
+	width: 70px;
+	text-align: center;
+ }
+
+.linkflair-pink .linkflairlabel,
+.linkflair-purple .linkflairlabel,
+.linkflair-orange .linkflairlabel,
+.linkflair-green .linkflairlabel,
+.linkflair-lightgreen .linkflairlabel,
+.linkflair-blue .linkflairlabel,
+.linkflair-red .linkflairlabel,
+.linkflair-maroon .linkflairlabel,
+.linkflair-lightblue .linkflairlabel,
+.linkflair-lighterblue .linkflairlabel,
+.linkflair-grey .linkflairlabel{
+	color: white;
+	font-weight: Bold;
+	padding: 2px 10px;
+	transition: 300ms;
+	margin: 0px 2px -2px 0px;
+}
+
+/*DEFAULT BACKGROUND*/
+.linkflair-pink .linkflairlabel {background: #e39ab4 !important;}/*FLUFF*/
+.linkflair-purple .linkflairlabel {background: #5bbdc2 !important;}/*SOFTWARE*/
+.linkflair-orange .linkflairlabel {background: #366ab3 !important;}/*NEWS*/
+.linkflair-green .linkflairlabel {background: #FDB833 !important;}/*DISCUSSION*/
+.linkflair-lightgreen .linkflairlabel {background: #9cba65 !important;}/*HARDWARE*/
+.linkflair-blue .linkflairlabel {background: RoyalBlue !important;}
+.linkflair-red .linkflairlabel {background: #1574D4 !important;} /*OFFICIAL*/
+.linkflair-maroon .linkflairlabel {background: #ba3858 !important;}/*VIDEO*/
+.linkflair-lightblue .linkflairlabel {background: #66C8D1 !important;}
+.linkflair-grey .linkflairlabel {background: #813cb0 !important;}/*EVENT*/
+.linkflair-lighterblue .linkflairlabel{background: #f0a77a !important;}/*TECH SUPPORT*/
+.linkflair-goldenrod .linkflairlabel{background: #995951 !important;}/*REVIEW*/
+.linkflair-seagreen .linkflairlabel{background: #dec943 !important;}/*TIPS & TRICKS*/
+.linkflair-slategrey .linkflairlabel{background: #666666 !important;}/*SHIPPING*/
+
+/*HOVER BACKGROUND*/
+.linkflair-pink .linkflairlabel:hover {background: #fcacc8 !important;}
+.linkflair-purple .linkflairlabel:hover {background: #67d5db !important;}
+.linkflair-orange .linkflairlabel:hover {background: #3d79cc !important;}
+.linkflair-green .linkflairlabel:hover {background: #fdc65b !important;}
+.linkflair-lightgreen .linkflairlabel:hover {background: #b2d472 !important;}
+.linkflair-blue .linkflairlabel:hover {background: #2d499d !important;}
+.linkflair-red .linkflairlabel:hover {background: #148aff !important;}
+.linkflair-maroon .linkflairlabel:hover {background: #d43f65 !important;}
+.linkflair-lighterblue .linkflairlabel:hover {background: #ffc29c !important;}
+.linkflair-grey .linkflairlabel:hover {background: #9444c9 !important;}
+.linkflair-goldenrod .linkflairlabel:hover {background: #b3685f !important;}
+.linkflair-seagreen .linkflairlabel:hover {background: #f7e04a !important;}
+.linkflair-slategrey .linkflairlabel:hover {background: #808080 !important;}
+
+/* Flair Selector */
+.flairselector.drop-choices.active {
+	border: 1px solid #e1e1e1;
+	border-radius: 8px !important;
+	visibility: visible;
+	background-color: #FFF;
+	padding: 20px !important;
+ }
+
+.flairselector .flairselection {margin-bottom: 17px;}
+
+.flairselector .customizer {
+	display: inline-block;
+	vertical-align: middle;
+ }
+
+.side .flairselector {
+	position: fixed;
+	top: 150px!important;
+	left: 50%!important;
+	margin-left: -220px;
+	width: 400px !important;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 0 16px rgba(0,0,0,0.64);
+ }
+
+.flairselector h2 {
+	margin-bottom: 4px;
+	background-color: transparent;
+	color: #555 !important;
+	text-align: left;
+	text-transform: uppercase !important;
+	font-weight: bold;
+	font-size: 12px !important;
+ }
+
+.flairselector form button {
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: bold;
+ }
+
+/*body.comments-page .sitetable {z-index: 3;}*/
+
+.side .flairselector:before {
+	display: block;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: -2;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.75);
+	content: "";
+	cursor: default;
+	transition: all 0.25s ease;
+	pointer-events: none; /*DO NOT REMOVE*/
+ }
+
+.flairselector.drop-choices.active {
+	visibility: visible !important;
+	background-color: #fff;
+	border: 1px solid #d8d8d8;
+	border-radius: 2px;
+ }
+
+.flairselector h2 {
+	padding: 5px 5px 5px 5px;
+	background-color: #fff;
+	border-bottom: 1px solid #e5e5e5;
+	text-transform: capitalize;
+ }
+
+.flairoptionpane {text-align: left;}
+
+	.flairoptionpane ul {visibility: visible !important;}
+
+		.flairoptionpane ul a.title {font-size: 100% !important;}
+
+.flairselector li {
+	padding: 3px 0px 3px 0px;
+	width: 182px;
+ }
+
+	.flairselector li:hover {background-color: #efefef;}
+
+.flairselector form {border-top: 1px solid #e5e5e5;}
+
+.flairsample-left {text-align: left !important;}
+
+.flairselector ul {overflow: visible;}
+
+.flairselector li.selected {
+	background-color: #e5ebf8;
+	border: none;
+ }
+
+/*LOGIN FORM*/
+.login-form-side {
+	border: medium none;
+	padding: 16px;
+	margin-top: -10px;
+ }
+
+	.login-form-side input[type="text"], .login-form-side input[type="password"] {
+		font-size: 11px;
+		box-sizing: border-box;
+		border: 1px solid #999;
+		width: 258px;
+	 }
+
+	.login-form-side #remember-me * {vertical-align: middle;}
+
+	.login-form-side .submit {
+		float: right;
+		margin-top: 5px;
+		margin-right: 5px;
+	 }
+
+
+/*THUMBNAILS*/
+.thumbnail {
+	border-radius: 5px;
+	margin-right: 15px !important;
+	position: relative;
+	top: 33px;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+body:not(.comments-page) .thumbnail {margin: 10px 5px 0px 0px !important;}
+
+body .stickied .thumbnail.self,
+.thumbnail.nsfw,
+.thumbnail.self,
+.thumbnail.default {
+	background-repeat: no-repeat !important;
+	padding: 10px 0px;
+	border-radius: 15px;
+}
+
+/*STICKIED*/
+.stickied a.title:link,
+.stickied a.title:visited,
+body:not(.comments-page) .stickied .link .tagline,
+body:not(.comments-page) .stickied .tagline,
+body:not(.comments-page) .stickied .entry .buttons li a,
+body:not(.comments-page) .stickied .entry .buttons li + li {color: #2B8B27 !important;}
+
+/*NSFW*/
+.over18 a.title:link,
+.over18 a.title:visited,
+body:not(.comments-page) .over18 .link .tagline,
+body:not(.comments-page) .over18 .tagline,
+body:not(.comments-page) .over18 .entry .buttons li a,
+body:not(.comments-page) .over18 .entry .buttons li + li {color: #D10023!important;}
+
+/*UPPER RIGHT RES THINGY*/
+.res #RESShortcutsEditContainer, .res #sr-more-link {background: transparent;}
+
+#sr-more-link {
+	position: absolute;
+	top: -3px;
+ }
+
+#RESShortcutsSort, #RESShortcutsRight, #RESShortcutsLeft, #RESShortcutsAdd, #RESShortcutsTrash {
+	height: 25px;
+	line-height: 25px!important;
+	margin-right: 4px;
+	background: transparent!important;
+	color: #fff !important;
+ }
+
+.link .flat-list {
+	display: block;
+	padding: 1px 0px;
+	margin-top: 0px;
+ }
+
+li.searchfacet {width: 20em}
+
+/*LOADING MESSAGE AND ERROR FORMAT*/
+.error {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+ }
+
+/*STYLESHEET EDITING PAGE FIX*/
+.pretty-form {
+	font-size: larger;
+	margin-left: 25px;
+ }
+
+#preview-table > table {
+	border-width: 0.2em;
+	border-style: dashed;
+	border-color: #D3D3D3;
+	padding: 5px;
+	margin: 5px;
+	width: 900px;
+	margin-left: 25px;
+ }
+
+
+form#image-upload.image-upload {
+	margin-left: 25px;
+	padding: 9px;
+	line-height: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 10px;
+	margin-bottom: 20px;
+	color: #666;
+}
+
+/*FOOTER*/
+.debuginfo, .footer-parent {background-color: #1B1D1F;;}
+
+.debuginfo {
+	background-color: #16181A !important;
+		margin-top: -20px;
+}
+
+.footer-parent {
+	font-size: 14px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 300px;
+ }
+
+.footer .col {margin: 10px 0px 30px 0px;}
+
+.footer {border: 0 solid;}
+
+.col {border: none !important;}
+
+.footer .flat-vert li a {
+	font-size: 11px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: #999 !important;
+ }
+
+	.footer .flat-vert li a:hover {
+		text-decoration: none !important;
+		color: #fff !important;
+	 }
+
+.footer .flat-vert .title {
+	font-size: 16px;
+	font-weight: 700;
+	transition: color .25s ease, background-color .25s ease;
+	text-transform: uppercase;
+	color: white;
+ }
+
+.bottommenu { font-size: 10px; 
+border: medium none!important; 
+text-transform: uppercase;
+font-weight: normal;
+background-color: #16181A ;
+padding-top: 10px;
+color: #6D6D6D !important; }
+
+	.bottommenu a {
+		text-decoration: none;
+		color: #999;
+	 }
+
+#mail.havemail:before {
+	position: fixed;
+	bottom: 24px;
+	z-index: 100;
+	padding: 45px 0px 10px 0px;
+	background-color: rgba(0, 0, 0, 0.85);
+	border-radius: 6px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+	color: #fff;
+	width: 210px;
+	height: 15px;
+	left: 0px;
+	right: 0px;
+	content: "YOU HAVE NEW MESSAGES";
+	text-indent: 30px;
+	font-size: 11px;
+	line-height: 1;
+	-webkit-transform: translateY(112px);
+	transform: translateY(112px);
+	transition: background-color 0.25s ease, box-shadow 0.25s ease;
+	background-image: url(%%havemail%%);
+	background-position: 85px 8px;
+	margin: 0px auto;
+	background-size: 32px;
+	font-weight: bold;
+	background-repeat: no-repeat;
+ }
+
+	/*Animation */
+		#mail.havemail:before {
+			animation-name: toast;
+			animation-duration: 8s;
+			animation-iteration-count: 1;
+			animation-timing-function: ease;
+
+			-webkit-animation-name: toast;
+			-webkit-animation-duration: 8s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: ease;
+		}
+
+			#mail.havemail:hover:before {
+				-webkit-animation-play-state: paused;
+				 -moz-animation-play-state: paused;
+				 -o-animation-play-state: paused;
+				  animation-play-state: paused;
+			}
+
+
+			@-webkit-keyframes toast {
+			  0%  	{transform:translateY(76px);	-webkit-transform:translateY(76px);	opacity: 0;}
+			  20%  	{transform:translateY(76px);	-webkit-transform:translateY(76px);	opacity: 0;}
+			  25%	{transform:translateY(-8px);	-webkit-transform:translateY(-8px);	opacity: 0.8;}
+			  27%	{transform:translateY(00px);	-webkit-transform:translateY(00px);	opacity: 0.8;}
+			  92%	{transform:translateY(00px);	-webkit-transform:translateY(00px);	opacity: 0.8;}
+			  97%	{transform:translateY(16px);	-webkit-transform:translateY(16px);	opacity: 0.8;}
+			  100%	{transform:translateY(76px);	-webkit-transform:translateY(76px);	opacity: 0;}
+			}
+
+			@-o-keyframes toast {
+			  0%  	{transform:translateY(76px);	-webkit-transform:translateY(76px);	opacity: 0;}
+			  20%  	{transform:translateY(76px);	-webkit-transform:translateY(76px);	opacity: 0;}
+			  25%	{transform:translateY(-8px);	-webkit-transform:translateY(-8px);	opacity: 0.8;}
+			  27%	{transform:translateY(00px);	-webkit-transform:translateY(00px);	opacity: 0.8;}
+			  92%	{transform:translateY(00px);	-webkit-transform:translateY(00px);	opacity: 0.8;}
+			  97%	{transform:translateY(16px);	-webkit-transform:translateY(16px);	opacity: 0.8;}
+			  100%	{transform:translateY(76px);	-webkit-transform:translateY(76px);	opacity: 0;}
+			}
+
+
+			@-moz-keyframes toast {
+			  0%  	{transform:translateY(76px);	-webkit-transform:translateY(76px);	opacity: 0;}
+			  20%  	{transform:translateY(76px);	-webkit-transform:translateY(76px);	opacity: 0;}
+			  25%	{transform:translateY(-8px);	-webkit-transform:translateY(-8px);	opacity: 0.8;}
+			  27%	{transform:translateY(00px);	-webkit-transform:translateY(00px);	opacity: 0.8;}
+			  92%	{transform:translateY(00px);	-webkit-transform:translateY(00px);	opacity: 0.8;}
+			  97%	{transform:translateY(16px);	-webkit-transform:translateY(16px);	opacity: 0.8;}
+			  100%	{transform:translateY(76px);	-webkit-transform:translateY(76px);	opacity: 0;}
+			}
+
+
+			@keyframes toast {
+			  0%  	{transform:translateY(76px);	-webkit-transform:translateY(76px);	opacity: 0;}
+			  20%  	{transform:translateY(76px);	-webkit-transform:translateY(76px);	opacity: 0;}
+			  25%	{transform:translateY(-8px);	-webkit-transform:translateY(-8px);	opacity: 0.8;}
+			  27%	{transform:translateY(00px);	-webkit-transform:translateY(00px);	opacity: 0.8;}
+			  92%	{transform:translateY(00px);	-webkit-transform:translateY(00px);	opacity: 0.8;}
+			  97%	{transform:translateY(16px);	-webkit-transform:translateY(16px);	opacity: 0.8;}
+			  100%	{transform:translateY(76px);	-webkit-transform:translateY(76px);	opacity: 0;}
+			}
+
+		.RESDashboardToggle.remove,.RESSubscriptionButton,.RESshortcutside.remove,.fancy-toggle-button .remove,.panestack-title a.title-button,.panestack-title a.title-button.gold,.side .titlebox .md h4 a,.sidecontentbox a.helplink,button,.commentarea .comment a.expand:hover
+
+		{background:RoyalBlue}
+
+		.commentarea span.score, .comment .flat-list li a:hover,.comment .flat-list li a[onclick*=reply],.commentNavSortType:hover,.commentarea .menuarea .toggle a:hover,.entry .buttons .may-blank,.error,.link .domain a:hover,.link .entry .buttons li a:hover,.loadFlat:hover,.submit-page .roundfield a,.thing .title,#progressIndicator a#NERStaticLink,.deepthread a,.deepthread::after,.linefield .title
+
+		{color:RoyalBlue}
+
+
+		.roundfield input[type=url]:focus,.roundfield input[type=text]:focus,.roundfield textarea:focus,.usertext-edit textarea:focus,#img-name:focus,.roundfield input[type="url"]:focus,.flairlist .flair-jump input[type="text"]:focus, .RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container
+
+		{border-color: RoyalBlue}
+
+		.RESDashboardToggle.remove:hover,.comments-page .RESSubscriptionButton:hover,.fancy-toggle-button .remove:hover,.panestack-title a.title-button.gold:hover,.panestack-title a.title-button:hover,.side .titlebox .md h4 a:hover,.sidecontentbox a.helplink:hover,body.res .side .RESshortcutside.remove:hover,button:hover
+
+		{background:#6687e7}
+
+		.RESDashboardToggle.remove:active,.RESshortcutside.remove:active,.comments-page .RESSubscriptionButton:active,.fancy-toggle-button .remove:active,.panestack-title a.title-button.gold:active,.panestack-title a.title-button:active,.side .titlebox .md h4 a:active,.sidecontentbox a.helplink:active,button:active
+
+		{background:#27408b}
+		
+
+		
+		.RESSubscriptionButton
+		{background:RoyalBlue !important;}
+		
+		.RESSubscriptionButton:hover
+		{background:#6687e7 !important;}
+		
+		.RESSubscriptionButton:active
+		{background:#27408b !important;}
+
+		.thing .md table thead tr th,.morelink,.side .titlebox .md h3 a,.tabmenu,.wiki-page-content .md table thead tr th {background:#444}
+
+		.morelink:hover,.side .titlebox .md h3 a:hover {background:#666}
+
+		.morelink:active, .side .titlebox .md h3 a:active {background: #222;}
+
+
+
+#siteTable .thing .md blockquote,
+.wiki-page-content .md blockquote,
+.commentarea .md blockquote,
+#siteTable .thing .md ul,
+.commentarea .md ul,
+#siteTable .thing .md ol,
+.commentarea .thing .md ol,
+#siteTable .thing .md table,
+.commentarea .thing .md table {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 20px 10px 10px 10px;
+}
+#siteTable .thing .md blockquote,
+.wiki-page-content .md blockquote,
+.commentarea .md blockquote {
+	padding: 10px 10px;
+	border-left: solid 2px #666;
+	background-color: #f2f2f2;
+	color: #2f2f2f;
+	line-height: 20px;
+	font-size: 14px;
+}
+#siteTable .thing .md ul,
+.commentarea .md ul,
+.commentarea .thing .md ol,
+#siteTable .thing .md ol {
+	border-right: solid 1px #eaeaea;
+	border-left: solid 1px #eaeaea;
+	border-top: solid 1px #eaeaea;
+	line-height: 20px;
+	font-size: 14px;
+	padding: 0;
+}
+#siteTable .thing .md ul li,
+.commentarea .md ul li,
+.commentarea .thing .md ol li,
+#siteTable .thing .md ol li {
+	border-bottom: solid 1px #eaeaea;
+	background-color: #f8f8f8;
+	padding: 5px;
+}
+#siteTable .thing .md ul li:nth-child(odd),
+.commentarea .md ul:nth-child(odd),
+.commentarea .thing .md ol li:nth-child(odd),
+#siteTable .thing .md ol li:nth-child(odd) {
+	background-color: #f2f2f2;
+}
+#siteTable .thing .md ul,
+.commentarea .md ul{
+	list-style: none;
+}
+#siteTable .thing .md ol,
+.commentarea .thing .md ol{
+	list-style-position: inside;
+}
+#siteTable .thing .md table thead tr th,
+.commentarea .thing .md table thead tr th{
+	font-weight: normal;
+	padding: 10px 20px;
+	font-size: 14px;
+	color: white;
+	border: none;
+}
+#siteTable .thing .md table tbody tr,
+.commentarea .thing .md table thead tr th {
+	border-bottom: solid 1px #eaeaea;
+}
+#siteTable .thing .md table tbody tr td,
+.commentarea .thing .md table tbody tr td {
+	padding: 10px 20px;
+	border: none;
+}
+
+.res #RESShortcutsViewport {margin-right: 70px;}
+
+/*DARK MODE*/
+
+.res-nightmode .linkinfo .shortlink input {background: #444;}
+
+.res-nightmode #siteTable .thing .md blockquote,
+.res-nightmode  .wiki-page-content .md blockquote,
+.res-nightmode .commentarea .md blockquote {
+	padding: 10px;
+	border-left: 2px solid #888;
+	background-color: #2f2f2f;
+	color: #fff;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.res-nightmode #siteTable .thing .md table thead tr th, .res-nightmode  .wiki-page-content .md table thead tr th {background: #333;}
+
+.res-nightmode #siteTable .thing .md table tbody tr,
+.res-nightmode .commentarea .thing .md table tbody tr,
+.res-nightmode .wiki-page-content .md table tbody tr {
+	border-bottom: 1px solid #999;
+}
+
+.res-nightmode .md hr {color: #888;}
+
+.res-nightmode #siteTable .thing .md ul li:nth-child(odd),
+.res-nightmode .commentarea .md ul li:nth-child(odd),
+.res-nightmode #siteTable .thing .md ol li:nth-child(odd),
+.res-nightmode .commentarea .thing .md ol li:nth-child(odd),
+.res-nightmode .wiki-page-content .md ol li:nth-child(odd) {
+  background-color: #333;
+}
+
+.res-nightmode #siteTable .thing .md ul li,
+.res-nightmode .commentarea .md ul li,
+.res-nightmode #siteTable .thing .md ol li,
+.res-nightmode .commentarea .thing .md ol li,
+.res-nightmode .wiki-page-content .md ol li {
+  border-bottom: solid 1px #555;
+  background-color: #222;
+  padding: 5px;
+}
+
+.res-nightmode #siteTable .thing .md ul,
+.res-nightmode .commentarea .md ul,
+.res-nightmode #siteTable .thing .md ol,
+.res-nightmode .commentarea .thing .md ol,
+.res-nightmode .wiki-page-content .md ol {
+  border-right: solid 1px #555;
+  border-left: solid 1px #555;
+  border-top: solid 1px #555;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+
+.res-nightmode .content .entry .buttons li.reported-stamp, .res-nightmode body .content .stickied .entry .buttons li.reported-stamp  {
+
+	background: #222 !important;
+	color: #d1d1d1 !important;
+
+}
+.res-nightmode .pretty-button.positive {color: #7DDC1F !important;}
+
+.res-nightmode .pretty-button.neutral {color: #ccc;}
+
+.res-nightmode .pretty-button.negative {color:#FE728B !important;}
+
+.res-nightmode .nsfw-stamp {background: #FE728B;}
+
+.res-nightmode .combined-search-page .search-result-group .search-header-label,.res-nightmode .combined-search-page .search-result .search-result-body,.res-nightmode .combined-search-page .search-result .search-result-header .search-title,.res-nightmode .combined-search-page .search-result .search-result-footer .search-link,.res-nightmode .combined-search-page .search-result .search-result-meta,.res-nightmode .combined-search-page .search-result .search-score,.res-nightmode .combined-search-page .search-result .search-comments,.res-nightmode .combined-search-page .search-result-group .search-result-group-header {color: #fff}
+
+.res-nightmode .combined-search-page .search-result .search-expando.collapsed::before {background: transparent linear-gradient(to bottom,rgba(255,255,255,0) 0%,#444 100%) repeat scroll 0 0}
+
+.res-nightmode .combined-search-page .search-result .search-expando-button {color: #A4D11B}
+
+.res-nightmode .combined-search-page .search-result {border-bottom: 1px solid #666;}
+
+.res-nightmode .combined-search-page .search-result-group .search-result-group-header {
+	background: #222;
+	border-bottom: 1px solid #666;
+	border-top: 1px solid #666;
+}
+
+.res-nightmode .stickied a.title:link,.res-nightmode body:not(.comments-page) .stickied a.title:visited,.res-nightmode body:not(.comments-page) .stickied .link .tagline,.res-nightmode body:not(.comments-page) .stickied .tagline,.res-nightmode body:not(.comments-page) .stickied .entry .buttons li a,.res-nightmode body:not(.comments-page) .stickied .entry .buttons li + li,.res-nightmode body:not(.comments-page) .stickied .md p {color: #7ddc1f!important}
+
+.res-nightmode .over18 a.title:link,.res-nightmode .over18 a.title:visited,.res-nightmode body:not(.comments-page) .over18 .link .tagline,.res-nightmode body:not(.comments-page) .over18 .tagline,.res-nightmode body:not(.comments-page) .over18 .entry .buttons li a,.res-nightmode body:not(.comments-page) .over18 .entry .buttons li + li,.res-nightmode body:not(.comments-page) .over18 .md p {color: #fe728b!important}
+
+.res-nightmode body {background: #222}
+
+.res-nightmode div.content {background-color: #333;border:none}
+
+.res-nightmode .entry .buttons li a {color: #ccc!important}
+
+.res-nightmode .thing .title:visited,.res-nightmode .commentarea .menuarea .toggle a,.res-nightmode .commentNavSortType,.res-nightmode .dropdown.lightdrop .selected {color: #ababab !important;}
+
+.res-nightmode .thing .title {color: #fff !important}
+
+.res-nightmode input[name="uh"] ~ a:after {display: none}
+
+.res-nightmode .entry .buttons .may-blank {color: #fff}
+
+.res-nightmode a.comments::after {color: #ccc!important}
+
+.res-nightmode .flair {border: none}
+
+/*MILTONTHECAT RES NIGHTMODE FLAIR FIX*/
+.res-nightmode .flair {
+	background-color: transparent !important;
+}
+.res-nightmode .linkflairlabel {
+	color:#ffffff !important;
+}
+
+.res-nightmode .side {border: #4c4c4c;background:#333}
+
+.res-nightmode div.leavemoderator,.res-nightmode .toggle .option.active,.res-nightmode .titlebox form.toggle {color: #ccc}
+
+.res-nightmode .side .usertext-body {background-image: none;padding:0}
+
+.res-nightmode .icon-menu a {color: #fff}
+
+.res-nightmode .sidecontentbox .title h1 {color: #fff;font-weight:700}
+
+.res-nightmode .side .titlebox .md h3 a {background: #444}
+
+.res-nightmode .side .titlebox .md h3 a:hover {background: #666}
+
+.res-nightmode .side .titlebox .md h3 a:active {background: #222}
+
+.res-nightmode .titlebox span.subscribers,.res-nightmode .titlebox .users-online {color: #fff!important}
+
+.res-nightmode #sr-header-area a,
+
+.res-nightmode .sidecontentbox .collapse-button {border: 1px solid #fff;}
+
+.res-nightmode body.res #sr-header-area .sr-bar a.RESShortcutsCurrentSub,.res-nightmode .commentarea span.score {color: #fff!important}
+
+.res-nightmode .side .md h4 a {color: #fff!important}
+
+.res-nightmode .side .md h4 {background: #323232}
+
+.res-nightmode body:not(.comments-page) div.content .entry,.res-nightmode .md hr {border-bottom: 1px solid #666}
+
+.res-nightmode .content .md a {color: #a4d11b !important}
+
+.res-nightmode .titlebox a {color: #a4d11b}
+
+.res-nightmode .link.promotedlink.promoted {background-color: #565656}
+
+.res-nightmode span.score,.res-nightmode .sidecontentbox .more a {color: #ccc!important}
+
+.res-nightmode #progressIndicator,.res-nightmode .commentarea .panestack-title .title,.res-nightmode .commentingAs,.res-nightmode .md,.res-nightmode .linkinfo .date,.res-nightmode div.score,.res-nightmode span.totalvotes,.res-nightmode .linkinfo .shortlink {color: #fff!important}
+
+.res-nightmode body.comments-page .link {background: #323232}
+
+.res-nightmode .commentarea > .usertext {background-color: #292929}
+
+.res-nightmode .commentarea .thing,
+.res-nightmode .commentarea .child .thing.comment,
+.res-nightmode .commentarea .child .thing.comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+	border:1px solid #333 !important
+}
+
+.res-nightmode .commentarea .child .thing.comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+	background: #222 !important;
+}
+
+.res-nightmode .commentarea .thing,
+.res-nightmode .commentarea .child .thing.comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment,
+.res-nightmode .commentarea .child .thing.comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+	   background: #292929 !important;
+}
+
+
+.res-nightmode button {background-color: #999;color:#000}
+
+.res-nightmode .tagline a,.res-nightmode #RESShortcutsSort,.res-nightmode #RESShortcutsRight,.res-nightmode #RESShortcutsLeft,.res-nightmode #RESShortcutsAdd,.res-nightmode #RESShortcutsTrash {color: #fff}
+
+.res-nightmode .shortlink .input {
+	background-color: #222;
+	color: #fff;
+	border: 1px solid #666!important;
+ }
+
+.res-nightmode .side .titlebox .md h1,.res-nightmode .side .md ol,.res-nightmode .error,.res-nightmode .md del,.res-nightmode .dropdown.srdrop span.selected.title,.res-nightmode .menuarea,.res-nightmode #previoussearch label,.res-nightmode .search-page .searchfacets,.res-nightmode .searchfacet a,.res-nightmode .wiki-page-content .md h1,.res-nightmode .titlebox h1 a,.res-nightmode .wiki-page .wikititle,.res-nightmode .wiki-page .pageactions .wikiaction-current,.res-nightmode .generic-table,.res-nightmode .md pre code,.res-nightmode .formtabs-content .infobar,.res-nightmode .roundfield,.res-nightmode .wiki-page .wiki-page-content .wiki.md,.res-nightmode .wiki-page .wiki-page-content .wiki.md h2, .res-nightmode .side .md p,.res-nightmode .link .tagline,.res-nightmode .entry .buttons .may-blank,.res-nightmode .comment .flat-list li a:hover,.res-nightmode .link .entry .buttons li a:hover,.res-nightmode .link .domain a:hover, .res-nightmode #preview-table > table > tbody > tr > th,.res-nightmode form#image-upload.image-upload,.res-nightmode .pretty-form,  .res-nightmode .commentNavSortType:hover,.res-nightmode .commentarea .menuarea .toggle a:hover,.res-nightmode .comment .flat-list li a[onclick*="reply"],.res-nightmode .loadFlat:hover,.res-nightmode .submit-page .title,.res-nightmode .error,.res-nightmode #progressIndicator a#NERStaticLink, .res-nightmode .deepthread a, .res-nightmode .deepthread::after {color: #fff!important}
+
+.res-nightmode .search-page .searchfacets {background: #555}
+
+.res-nightmode .roundfield,.res-nightmode .formtabs-content .infobar {background-color: #333}
+
+.res-nightmode .md code {background-color: #222;border:1px solid #666!important}
+
+.res-nightmode .md pre {padding: 0;background-color:transparent!important; border: none;}
+
+.res-nightmode .wiki-page div.content {background-color: transparent;border:none}
+
+.res-nightmode .livePreview .md p {color: #000}
+
+.res-nightmode .wiki-page .infobar {background: none;border:none}
+
+.res-nightmode .wiki-page .wiki-page-content,.res-nightmode .wiki-page .pageactions,.res-nightmode .wiki-page .wikititle,.res-nightmode .content.submit .info-notice {background-color: #444!important}
+
+.res-nightmode body:not(.search-page) #search input[type="text"] {
+	background: #222!important;
+	border: 1px solid #444;
+	color: #fff
+ }
+
+.res-nightmode .submit-page .content a {color: #999 !important;}
+
+.res-nightmode .md table,.res-nightmode .md ul {color: #fff!important}
+
+.res-nightmode .side .titlebox {color: #fff}
+
+.res-nightmode ::-moz-selection {background: #666;color:#fff}
+
+.res-nightmode .linkinfo {background-color: #303030}
+
+.res-nightmode .debuginfo, .res-nightmode .footer-parent {background: #111;}
+
+.res-nightmode .gold-accent.comment-visits-box {color: #fff;}
+
+.res-nightmode ul#image-preview-list li {
+	background: #333;
+	border: none;
+	color: #fff
+ }
+
+.res-nightmode .flairselector h2,.res-nightmode .flairselector .tagline a {color: #000!important}
+
+.res-nightmode .wiki-page .wiki-page-content .md.wiki h4 {color: #fff!important}
+
+.res-nightmode .comments-page .content .infobar {
+	background: #444;
+	color: #fff;
+ }
+
+.res-nightmode 	.commentarea textarea:not(:focus):not(:hover) {
+			color: transparent;
+			background-color: #444 !important;
+		text-shadow: 0px 0px 12px #000;
+	}
+
+.res-nightmode 	.commentarea textarea:hover,
+.res-nightmode .roundfield textarea:hover,
+.res-nightmode .roundfield input[type="url"]:hover,
+.res-nightmode .roundfield input[type="text"]:hover {border: 1px solid #9f9f9f;}
+
+.res-nightmode textarea,
+.res-nightmode .roundfield input[type="text"],
+.res-nightmode .roundfield input[type="url"] {
+	background-color: #222!important;
+	color:#fff!important;
+	transition: 300ms;
+	transition: 300ms;
+	border: 1px solid #666;
+}
+
+.res-nightmode .usertext-edit textarea:focus,
+.res-nightmode .roundfield textarea:focus,
+.res-nightmode .roundfield input[type="url"]:focus,
+.res-nightmode .roundfield input[type="text"]:focus {
+	border: 1px solid #666;
+	transition: 0.1s ease;
+	border-bottom: 3px solid #999 !important;
+}
+
+.res-nightmode .toc ul {background: transparent;}
+
+.res-nightmode .deepthread a, .deepthread::after {color: white;}
+
+.res-nightmode .commentarea .comment a.expand:hover {background: #999; color: #333;}
+
+.res-nightmode .markdownEditor .edit-btn:not(.btn-macro) {background-color: #ccc !important; border: none !important; border-radius: 4px !important;}
+
+.res-nightmode .expando-button,.res-nightmode  .expando-button.expanded,.res-nightmode  .expando-button.expanded:hover,.res-nightmode .expando-button:hover {border-radius: 20px !important; background-color: #999 !important;}
+
+.res-nightmode #REScommentSubToggle {
+	background: #ccc !important;
+	color: #000 !important;
+}
+
+.res-nightmode .tabmenu {background: #333;}
+
+.res-nightmode .side .md h2 + ul {background: #222;}
+
+.res-nightmode .side .sidecontentbox a {color: #ccc}
+
+.res-nightmode .RES-keyNav-activeElement,
+.res-nightmode .RES-keyNav-activeElement .md-container {
+	background-color: #444 !important;
+	border-color: #aaa;
+}
+
+
+
+/*
+
+Credits
+
+/r/EnTypo for Enhanced Typograhy
+/r/Apple for Messages alert
+/r/Naut for Moderator Distinguish Message
+/u/Karma_4_free for Subreddit List style from /r/Apicem
+/r/Overwatch for comment collapse button
+/r/Slight for input box underline
+/u/matiyarosz for Oculus modifications
+
+MANDATORY LEGAL NOTICES/CREDITS - DO NOT REMOVE
+
+Gear by Alexander Simone from the Noun Project
+Compass by Vicons Design from the Noun Project
+Arrow Up by Raashid.A from the Noun Project
+Add by John Chapman from the Noun Project
+Thumbtack by Bonnie Beach from the Noun Project
+Conversation by vijay sekhar from the Noun Project
+Warning by Lorena Salagre from the Noun Project
+Sliders by Remco Homberg from the Noun Project
+Power by Gregor Črešnar from the Noun Project
+message by Hakan Yalcin from the Noun Project
+read message by Hakan Yalcin from the Noun Project
+
+*/
+
+
+
+/*ADD SNIPPETS BELOW THIS LINE
+============================================================================*/
+
+/*DOWNVOTE TEXT*/
+.arrow.down:hover:before {
+	position: absolute;
+	display: block;
+	z-index: 1000;
+	width: auto;
+	padding: 5px;
+	border: none;
+	background: #88c800;
+	content: "Remember, downvotes are for comments that don't contribute to the discussion. It's not a dislike button!."; /*DOWNVOTE MESSAGE*/
+	text-align: center;
+	font-size: 13px;
+	color: white;
+	margin-left: 40px;
+	margin-top: 0px;
+	border-radius: 4px;
+	font-weight:bold;
+ }
+/*END DOWNVOTE TEXT*/
+
+/*SUBREDDIT NAME SNOO*/
+
+.side .titlebox .redditname a {
+padding-top: 11px;
+	text-indent: 50px;
+	background-image: url(%%name-snoo%%);
+	background-size: cover;
+	width: 38px;
+	height: 42px;
+	display: block;
+	margin-left: 40px;
+}
+/*END SUBREDDIT NAME SNOO*/
+
+/*ANNOUNCEMENT BAR*/
+
+.side h6:nth-of-type(1) {
+  position:absolute;
+  display: block;
+  top: 98px; 
+  left:16px;
+  right: 336px;
+  background-color: #444444;
+  color: #FFFFFF;
+  text-align: left;
+ 
+  border-radius: 6px;
+  width: auto;
+  z-index: 1;
+  padding:  9px 9px 9px 9px;
+ 
+  border: 1px solid gray;
+  text-overflow: ellipsis;
+  overflow: hidden;
+ 
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 120%;
+  
+  
+	
+	  
+  
+}
+
+
+/*MRUNITED12 FLAIR IMPLEMENTATION*/
+
+
+.flair {
+	background: url(%%spritesheet2%%) no-repeat -9999px;
+	border: 0;
+	padding: 0;
+	margin:0px 4px 0px 4px;
+	vertical-align:middle;
+	overflow: hidden;
+	text-indent: -9999em;
+	line-height: 24px;
+	font-size: 12px !important;
+	width: 24px;
+	height: 24px;
+}
+
+/*MILTONTHECAT FLAIR HOVER FIX*/
+
+.flair:hover {
+	width:auto !important;
+	text-indent:30px !important;
+	overflow:auto;
+}
+
+/*DON'T POP-OUT FLAIR DESCRIPTION IN SIDEBAR*/
+.titlebox .tagline .flair:hover {
+	width:24px !important;
+	overflow: hidden !important;
+	text-indent: -9999em !important;
+}
+
+/*ALL DEVELOPER FLAIR*/
+
+.flair-FirePanda {
+	background-position: 0 0;
+}
+
+.flair-HLVR {
+	background-position: 0 -24px;
+}
+
+.flair-IRISVR {
+	background-position: 0 -48px;
+}
+
+.flair-XVirtualreality {
+	background-position: 0 -72px;
+}
+
+.flair-bigscreen {
+	background-position: 0 -96px;
+}
+
+.flair-gnometech {
+	background-position: 0 -120px;
+}
+
+.flair-jammich {
+	background-position: 0 -144px;
+}
+
+.flair-kickstarter {
+	background-position: 0 -168px;
+}
+
+.flair-liveforspeed {
+	background-position: 0 -192px;
+}
+
+.flair-moderator {
+	background-position: 0 -216px;
+}
+
+.flair-oculus {
+	height: 14px;
+	background-position: 0 -240px;
+	line-height:14px !important;
+}
+
+.flair-scrutagames {
+	background-position: 0 -254px;
+}
+
+.flair-rainwave {
+	background-position: 0 -278px;
+}
+
+.flair-sunflair {
+	background-position: 0 -302px;
+}
+
+.flair-szv {
+	background-position: 0 -326px;
+}
+
+.flair-vrgamerdude {
+	background-position: 0 -350px;
+}
+
+.flair-vrviking {
+	background-position: 0 -374px;
+}
+
+.flair-wingsuitvr {
+	background-position: 0 -398px;
+}
+
+.flair-wowvr {
+	background-position: 0 -422px;
+}
+
+.flair-hoopera {
+	background-position: 0 -446px;
+}
+
+.flair-esper2 {
+	background-position: 0 -470px;
+}
+
+.flair-dk1 {
+	background-position: 0 -494px;
+}
+
+.flair-dk2 {
+	background-position: 0 -518px;
+}
+
+.flair-vive {
+	background-position: 0 -542px;
+}
+
+.flair-EmuVR {
+	background-position: 0 -566px;
+}
+
+.flair-CCP {
+	background-position: 0 -590px;
+}
+
+.flair-Spock {
+	background-position: 0 -614px;
+}
+
+.flair-GexagonVR {
+	background-position: 0 -638px;
+}
+
+.flair-HonokoVR {
+	background-position: 0 -662px;
+}
+
+.flair-Firma {
+	background-position: 0 -686px;
+}
+
+.flair-RowVR {
+	background-position: 0 -710px;
+}
+
+.flair-RealityCheckVR {
+	background-position: 0 -734px;
+}
+
+.flair-vrventures {
+	background-position: 0 -758px;
+}
+
+.flair-ByMeGames {
+	background-position: 0 -782px;
+}
+
+.flair-eVRydayVR {
+	background-position: 0 -806px;
+}
+
+.flair-OculusHenry {
+	background-position: 0 -830px;
+}
+
+.flair-OculusLucky {
+	background-position: 0 -854px;
+}
+
+.flair-Opamp {
+	background-position: 0 -878px;
+}
+
+.flair-VirtualDesktop {
+	background-position: 0 -902px;
+}
+
+.flair-Metacraft {
+	height: 20px;
+	background-position: 0 -926px;
+}
+
+.flair-LeapMotion {
+	background-position: 0 -940px;
+}
+
+.flair-Rift {
+	background-position: 0 -964px;
+}
+
+.flair-B99 {
+	background-position: 0 -988px;
+}
+
+.flair-RecursiveVR {
+	background-position: 0 -1012px;
+}
+
+.flair-Hendesehane {
+	background-position: 0 -1036px;
+}
+
+.flair-RealVisionae {
+	background-position: 0 -1060px;
+}
+
+.flair-NexeVR {
+	background-position: 0 -1084px;
+}
+
+.flair-BrainBlinks {
+	background-position: 0 -1108px;
+}
+
+.flair-betaVR {
+	background-position: 0 -1132px;
+}
+
+.flair-HeadTripGames {
+	background-position: 0 -1156px;
+}
+
+.flair-narayanagames {
+	background-position: 0 -1180px;
+}
+
+.flair-VRCover {
+	background-position: 0 -1204px;
+}
+
+.flair-QualityAssurance {
+	background-position: 0 -1228px;
+}
+
+.flair-TriHelix {
+	background-position: 0 -1252px;
+}
+
+.flair-vradventure {
+	background-position: 0 -1276px;
+}
+
+.flair-Crytek {
+	background-position: 0 -1300px;
+}
+
+.flair-VRSverige {
+	background-position: 0 -1324px;
+}
+
+.flair-ImmotionAR {
+	background-position: 0 -1348px;
+}
+
+.flair-brotherLovess {
+	background-position: 0 -1372px;
+}
+
+.flair-AltspaceVR {
+	background-position: 0 -1396px;
+}
+ 
+.flair-GunfireGames {
+	background-position: 0 -1420px;
+}
+ 
+.flair-DigitalCybercherries {
+	background-position: 0 -1444px;
+}
+ 
+.flair-ChromeWebVR {
+	background-position: 0 -1468px;
+}
+
+.flair-ClubVixXxen {
+	background-position: 0 -1492px;
+}
+ 
+.flair-Valiant {
+	background-position: 0 -1516px;
+}
+ 
+.flair-BrainFizz {
+	background-position: 0 -1540px;
+}
+ 
+.flair-Ihave37piecesofflair {
+	background-position: 0 -1564px;
+}
+
+.flair-julesButler {
+	background-position: 0 -1588px;
+}
+
+.flair-turingVR {
+	background-position: 0 -1612px;
+}
+
+.flair-songsak {
+	background-position: 0 -1636px;
+}
+
+.flair-VRNerds {
+	background-position: 0 -1660px;
+}
+
+.flair-AldinDynamics {
+	background-position: 0 -1684px;
+}
+
+.flair-ALICEVR {
+	background-position: 0 -1708px;
+}
+
+.flair-VRFocus {
+	background-position: 0 -1732px;
+}
+
+.flair-JanusVR {
+	background-position: 0 -1756px;
+}
+
+.flair-vrdevschool {
+	background-position: 0 -1780px;
+}
+
+.flair-VRBites {
+	background-position: 0 -1804px;
+}
+
+.flair-GearVR {
+	background-position: 0 -1828px;
+}
+
+.flair-Zimtok5 {
+	background-position: 0 -1852px;
+}
+
+.flair-JustTheLetterV {
+	background-position: 0 -1876px;
+}
+
+.flair-OrbitCo {
+	background-position: 0 -1900px;
+}
+
+.flair-Cloudhead {
+	background-position: 0 -1924px;
+}
+
+.flair-TheBodyVR {
+	background-position: 0 -1948px;
+}
+
+.flair-QuakeGVR {
+	background-position: 0 -1972px;
+}
+
+.flair-VRSites {
+	background-position: 0 -1996px;
+}
+
+.flair-RoadToVR {
+	background-position: 0 -2020px;
+}
+
+.flair-TurboButton {
+	background-position: 0 -2044px;
+}
+
+.flair-Warped3Lab {
+	background-position: 0 -2068px;
+}
+
+.flair-Psytec {
+	background-position: 0 -2092px;
+}
+
+.flair-HighFidelity {
+	background-position: 0 -2116px;
+}
+
+.flair-KeckCAVE {
+	background-position: 0 -2140px;
+}
+
+.flair-Minecrift {
+	background-position: 0 -2164px;
+}
+
+.flair-SynthesisUniverse {
+	background-position: 0 -2188px;
+}
+
+.flair-CubeyTube {
+	background-position: 0 -2212px;
+}
+
+.flair-Hexkraft {
+	background-position: 0 -2236px;
+}
+
+.flair-VRideo {
+	background-position: 0 -2260px;
+}
+
+.flair-ReVive {
+	background-position: 0 -2284px;
+}
+
+.flair-Jaunt {
+	background-position: 0 -2308px;
+}
+
+.flair-Darknet {
+	background-position: 0 -2332px;
+}
+
+.flair-DigitalPrecept {
+	background-position: 0 -2356px;
+}
+
+.flair-RadialG {
+	background-position: 0 -2380px;
+}
+
+.flair-VirtualNovel {
+	background-position: 0 -2404px;
+}
+
+.flair-FlyingAcesVR {
+	background-position: 0 -2428px;
+}
+
+.flair-Lightweave {
+	background-position: 0 -2452px;
+}
+
+.flair-AudioArena {
+	background-position: 0 -2476px;
+}
+
+.flair-OSVR {
+	background-position: 0 -2500px;
+}
+
+.flair-UploadVR {
+	background-position: 0 -2524px;
+}
+
+.flair-CastIron {
+	background-position: 0 -2548px;
+}
+
+.flair-Professor {
+	background-position: 0 -2572px;
+}
+
+.flair-Zoe {
+	background-position: 0 -2596px;
+}
+
+.flair-Noitom {
+	background-position: 0 -2620px;
+}
+
+.flair-FlyInside {
+	background-position: 0 -2644px;
+}
+
+.flair-VirutalRealityGinger {
+	background-position: 0 -2668px;
+}
+
+.flair-Idzen {
+	background-position: 0 -2692px;
+}
+
+.flair-VRChat {
+	background-position: 0 -2716px;
+}
+
+.flair-CastleBlack {
+	background-position: 0 -2740px;
+}
+
+.flair-CubicleNinjas {
+	background-position: 0 -2764px;
+}
+
+.flair-FrostEarthStudio {
+	background-position: 0 -2788px;
+}
+
+.flair-TheVOID {
+	background-position: 0 -2812px;
+}
+
+.flair-InsomniacGames {
+	background-position: 0 -2836px;
+}
+
+.flair-OpposableVR {
+	background-position: 0 -2860px;
+}
+
+.flair-BlackShock {
+	background-position: 0 -2884px;
+}
+
+.flair-vTime {
+	background-position: 0 -2908px;
+}
+
+.flair-Sh0v {
+	background-position: 0 -2932px;
+}
+
+.flair-GrandCanyon {
+	background-position: 0 -2956px;
+}
+
+.flair-BombSquad {
+	background-position: 0 -2980px;
+}
+
+.flair-VirtualInSynergy {
+	background-position: 0 -3004px;
+}
+
+.flair-ZeroTransform {
+	background-position: 0 -3028px;
+}
+
+.flair-VRHentai {
+	background-position: 0 -3052px;
+}
+
+.flair-realitiesio {
+	background-position: 0 -3076px;
+}
+
+.flair-GameSpot {
+	background-position: 0 -3100px;
+}
+
+.flair-UpRocket {
+	background-position: 0 -3124px;
+}
+
+
+
+.flair-Multiscreens {
+	background-position: 0 -3148px;
+}
+
+.flair-cobuman {
+	background-position: 0 -3172px;
+}
+
+.flair-DimensionalGame {
+	background-position: 0 -3196px;
+}
+
+.flair-MisterFeltz {
+	background-position: 0 -3220px;
+}
+
+.flair-RedRabbitVR {
+	background-position: 0 -3244px;
+}
+
+.flair-VirtualRealityAustralia {
+	background-position: 0 -3268px;
+}
+
+.flair-Detached {
+	background-position: 0 -3292px;
+}
+
+.flair-LewdFraggy {
+	background-position: 0 -3316px;
+}
+
+.flair-FuriousAngels {
+	background-position: 0 -3340px;
+}
+
+.flair-CircVR {
+	background-position: 0 -3364px;
+}
+
+.flair-MysteriousGamer {
+	background-position: 0 -3388px;
+}
+
+.flair-nDreams {
+	background-position: 0 -3412px;
+}
+
+.flair-HVS {
+	background-position: 0 -3436px;
+}
+
+.flair-KnL {
+	background-position: 0 -3460px;
+}
+
+.flair-TacticalHaptics {
+	background-position: 0 -3484px;
+}
+
+.flair-DreamDesk {
+	background-position: 0 -3508px;
+}
+
+.flair-SpaceRift {
+	background-position: 0 -3532px;
+}
+
+.flair-VRDiscLeague {
+	background-position: 0 -3556px;
+}
+
+.flair-Windlands {
+	background-position: 0 -3580px;
+}
+
+.flair-WIDMOvr {
+	background-position: 0 -3604px;
+}
+
+.flair-DextaRobotics {
+	background-position: 0 -3628px;
+}
+
+.flair-Cyan {
+	background-position: 0 -3652px;
+}
+
+.flair-Polynomial2 {
+	background-position: 0 -3676px;
+}
+
+.flair-InsideVio {
+	background-position: 0 -3700px;
+}
+
+.flair-bekris {
+	background-position: 0 -3724px;
+}
+
+.flair-RecRoom {
+	background-position: 0 -3748px;
+}
+
+.flair-NeptuneFlux {
+	background-position: 0 -3772px;
+}
+
+.flair-MrWhiskersVR {
+	background-position: 0 -3796px;
+}
+
+.flair-Zulubo {
+	background-position: 0 -3820px;
+}
+
+.flair-VirZOOM {
+	background-position: 0 -3844px;
+}
+
+.flair-ForceFieldVR {
+	background-position: 0 -3868px;
+}
+
+.flair-FunktronicLabs {
+	background-position: 0 -3892px;
+}
+
+.flair-AnarchyArcade {
+	background-position: 0 -3916px;
+}
+
+.flair-ThinkOnLabs {
+	background-position: 0 -3940px;
+}
+
+.flair-Ubisoft {
+	background-position: 0 -3964px;
+}
+
+.flair-SteelWoolStudios {
+	background-position: 0 -3988px;
+}
+
+.flair-MDI {
+	background-position: 0 -4012px;
+}
+
+.flair-GZ3Doom {
+	background-position: 0 -4036px;
+}
+
+.flair-Tested {
+	background-position: 0 -4060px;
+}
+
+.flair-OTOY {
+	background-position: 0 -4084px;
+}
+
+.flair-Rubycone {
+	background-position: 0 -4108px;
+}
+
+.flair-MAGS {
+	background-position: 0 -4132px;
+}
+
+.flair-Foo {
+	background-position: 0 -4156px;
+}
+
+.flair-DTE {
+	background-position: 0 -4180px;
+}
+
+.flair-BRF {
+	background-position: 0 -4204px;
+}
+
+.flair-LL {
+	background-position: 0 -4228px;
+}
+
+.flair-Touch {
+	background-position: 0 -3724px;
+}
+
+.flair-DNB {
+	background-position: 0 -4252px;
+}
+
+.flair-Marlene {
+	background-position: 0 -4276px;
+}
+
+.flair-HDCW {
+	background-position: 0 -4300px;
+}
+
+.flair-COVIRTUA {
+	background-position: 0 -4324px;
+}
+
+.flair-PLI {
+	background-position: 0 -4348px;
+}
+
+.flair-VRSS {
+	background-position: 0 -4372px;
+}
+
+.flair-KDD {
+	background-position: 0 -4396px;
+}
+
+.flair-SVR {
+	background-position: 0 -4420px;
+}
+
+.flair-Owlchamy {
+	background-position: 0 -4444px;
+}
+
+.flair-Dreadhalls {
+	background-position: 0 -4468px;
+}
+
+.flair-H3 {
+	background-position: 0 -4492px;
+}
+
+.flair-GravLab {
+	background-position: 0 -4516px;
+}
+
+.flair-HugeRobot {
+	background-position: 0 -4540px;
+}
+
+.flair-Sanzaru {
+	background-position: 0 -4564px;
+}
+
+.flair-DMUEM {
+	background-position: 0 -4588px;
+}
+
+.flair-ESL {
+	background-position: 0 -4612px;
+}
+
+.flair-BCDM {
+	background-position: 0 -4636px;
+}
